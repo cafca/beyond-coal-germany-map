@@ -1,0 +1,1831 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Altbach/Deizisau 1+2",
+        "date": "15/1/2020",
+        "capacity": "855 MW",
+        "emissions": 1.3,
+        "age": 35,
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.7191000,9.3713000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.3713,
+          48.7191
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Niederaussem",
+        "date": "15/1/2020",
+        "capacity": "3676 MW",
+        "emissions": 25.9,
+        "age": 55,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.9709000,6.6666000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.6666,
+          50.9709
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bergkamen",
+        "date": "15/1/2020",
+        "capacity": "780 MW",
+        "emissions": 1.6,
+        "age": 39,
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6372000,7.6191000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.6191,
+          51.6372
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Berlin-Moabit",
+        "date": "15/1/2020",
+        "capacity": "100 MW",
+        "emissions": 0.4,
+        "age": 30,
+        "owner": "Vattenfall",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.5374000,13.3449000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2030
+      },
+      "geometry": {
+        "coordinates": [
+          13.3449,
+          52.5374
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Berlin-Klingenberg",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": "Retired at the age of 31",
+        "owner": "Vattenfall",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.4900000,13.4960000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          13.496,
+          52.49
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Berlin-Reuter",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0.2,
+        "age": "Retired at the age of 50",
+        "owner": "Vattenfall",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.5309000,13.2456000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          13.2456,
+          52.5309
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Berlin-Reuter West",
+        "date": "15/1/2020",
+        "capacity": "600 MW",
+        "emissions": 2.2,
+        "age": 33,
+        "owner": "Vattenfall",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.5352000,13.2437000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2030
+      },
+      "geometry": {
+        "coordinates": [
+          13.2437,
+          52.5352
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bexbach",
+        "date": "15/1/2020",
+        "capacity": "780 MW",
+        "emissions": 0,
+        "age": 37,
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.3649000,7.2355000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.2355,
+          49.3649
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lippendorf",
+        "date": "15/1/2020",
+        "capacity": "1867 MW",
+        "emissions": 11.7,
+        "age": 21,
+        "owner": "EnBW/EPH",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.1832000,12.3717000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          12.3717,
+          51.1832
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Boxberg",
+        "date": "15/1/2020",
+        "capacity": "2582 MW",
+        "emissions": 19,
+        "age": 41,
+        "owner": "EPH",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.4188000,14.5743000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          14.5743,
+          51.4188
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Braunschweig",
+        "date": "15/1/2020",
+        "capacity": "78 MW",
+        "emissions": 0.4,
+        "age": 36,
+        "owner": "Veolia",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.2780000,10.5147000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          10.5147,
+          52.278
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bremen-Hafen",
+        "date": "15/1/2020",
+        "capacity": "326 MW",
+        "emissions": 1.2,
+        "age": 41,
+        "owner": "swb AG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.1239000,8.7273000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.7273,
+          53.1239
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bremen-Farge",
+        "date": "15/1/2020",
+        "capacity": "380 MW",
+        "emissions": 1.2,
+        "age": 51,
+        "owner": "Riverstone",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.2021000,8.5162000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.5162,
+          53.2021
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bremen-Hastedt",
+        "date": "15/1/2020",
+        "capacity": "129 MW",
+        "emissions": 0.7,
+        "age": 31,
+        "owner": "swb AG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.0593000,8.8730000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.873,
+          53.0593
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Chemnitz North II",
+        "date": "15/1/2020",
+        "capacity": "167 MW",
+        "emissions": 1,
+        "age": 32,
+        "owner": "City of Chemnitz",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.8566000,12.9230000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          12.923,
+          50.8566
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cottbus",
+        "date": "15/1/2020",
+        "capacity": "82 MW",
+        "emissions": 0.3,
+        "age": 21,
+        "owner": "Stadtwerke Cottbus GmbH",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.7597000,14.3696000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          14.3696,
+          51.7597
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Datteln",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": 0,
+        "owner": "Uniper",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6293000,7.3307000&zoom=16&basemap=satellite",
+        "status": "Construction",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.3307,
+          51.6293
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Dessau",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0.1,
+        "age": "Retired at the age of 23",
+        "owner": "Stadtwerke Dessau",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.8276000,12.2306000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          12.2306,
+          51.8276
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Duisburg-Hochfeld II",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0.1,
+        "age": "Retired at the age of 53",
+        "owner": "Duisburger Versorgungs- und Verkehrsgesellschaft mbH (DVV)",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.4291000,6.7508000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          6.7508,
+          51.4291
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Duisburg-Walsum",
+        "date": "15/1/2020",
+        "capacity": "1200 MW",
+        "emissions": 3.3,
+        "age": 32,
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.5260000,6.7196000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.7196,
+          51.526
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ensdorf",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": "Retired at the age of 54",
+        "owner": "RWE",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.2932000,6.7708000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          6.7708,
+          49.2932
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Erlangen",
+        "date": "15/1/2020",
+        "capacity": "18 MW",
+        "emissions": 0.2,
+        "age": 40,
+        "owner": "City of Erlangen",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.5925000,11.0021000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          11.0021,
+          49.5925
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Eschweiler-Weisweiler",
+        "date": "15/1/2020",
+        "capacity": "1958 MW",
+        "emissions": 16.8,
+        "age": 55,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.8332000,6.3146000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.3146,
+          50.8332
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Flensburg",
+        "date": "15/1/2020",
+        "capacity": "100 MW",
+        "emissions": 0.6,
+        "age": 35,
+        "owner": "City of Flensburg",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=54.8049000,9.4327000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.4327,
+          54.8049
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Frankfurt/Main West",
+        "date": "15/1/2020",
+        "capacity": "144 MW",
+        "emissions": 0.7,
+        "age": 31,
+        "owner": "Stadtwerke Frankfurt am Main Holding",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.0986000,8.6532000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.6532,
+          50.0986
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Scholven/Buer",
+        "date": "15/1/2020",
+        "capacity": "816 MW",
+        "emissions": 4.3,
+        "age": 52,
+        "owner": "Uniper",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6024000,7.0099000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": "202x"
+      },
+      "geometry": {
+        "coordinates": [
+          7.0099,
+          51.6024
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Grevenbroich-Frimmersdorf",
+        "date": "15/1/2020",
+        "capacity": "635 MW",
+        "emissions": 0,
+        "age": 54,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.0585000,6.5825000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2021
+      },
+      "geometry": {
+        "coordinates": [
+          6.5825,
+          51.0585
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Grevenbroich-Neurath",
+        "date": "15/1/2020",
+        "capacity": "4424 MW",
+        "emissions": 32.2,
+        "age": 48,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.0372000,6.5992000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.5992,
+          51.0372
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Grosskrotzenburg Staudinger",
+        "date": "15/1/2020",
+        "capacity": "553 MW",
+        "emissions": 1.6,
+        "age": 28,
+        "owner": "Uniper",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.0877000,8.9535000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.9535,
+          50.0877
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hamburg-Tiefstack",
+        "date": "15/1/2020",
+        "capacity": "205 MW",
+        "emissions": 1.2,
+        "age": 27,
+        "owner": "Vattenfall",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.5261000,10.0655000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          10.0655,
+          53.5261
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hamm Westfalen",
+        "date": "15/1/2020",
+        "capacity": "820 MW",
+        "emissions": 3,
+        "age": 6,
+        "owner": "RWE",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6826000,7.9699000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.9699,
+          51.6826
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hannover",
+        "date": "15/1/2020",
+        "capacity": "300 MW",
+        "emissions": 1.6,
+        "age": 31,
+        "owner": "Versorgungs- und Verkehrsgesellschaft Hannover mbH (VVG)",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.4203000,9.6476000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.6476,
+          52.4203
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Heilbronn",
+        "date": "15/1/2020",
+        "capacity": "1066 MW",
+        "emissions": 2.7,
+        "age": 55,
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.1756000,9.2076000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.2076,
+          49.1756
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Helmstedt Buschhaus",
+        "date": "15/1/2020",
+        "capacity": "405 MW",
+        "emissions": 0,
+        "age": 35,
+        "owner": "EPH",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.1724000,10.9768000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2020
+      },
+      "geometry": {
+        "coordinates": [
+          10.9768,
+          52.1724
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Herne",
+        "date": "15/1/2020",
+        "capacity": "500 MW",
+        "emissions": 1.3,
+        "age": 31,
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.5507000,7.1875000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.1875,
+          51.5507
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mehrum",
+        "date": "15/1/2020",
+        "capacity": "750 MW",
+        "emissions": 2.3,
+        "age": 41,
+        "owner": "EPH",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.3150000,10.0914000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          10.0914,
+          52.315
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Waehlitz",
+        "date": "15/1/2020",
+        "capacity": "37 MW",
+        "emissions": 0.2,
+        "age": 26,
+        "owner": "EPH",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.1663000,12.0764000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          12.0764,
+          51.1663
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ibbenbueren",
+        "date": "15/1/2020",
+        "capacity": "838 MW",
+        "emissions": 3,
+        "age": 35,
+        "owner": "RWE",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.2888000,7.7479000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.7479,
+          52.2888
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Karcherstr.",
+        "date": "15/1/2020",
+        "capacity": "15 MW",
+        "emissions": 0,
+        "age": 24,
+        "owner": "SWK - Stadtwerke Kaiserslautern",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.4350000,7.7609000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.7609,
+          49.435
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Karlsruhe",
+        "date": "15/1/2020",
+        "capacity": "1462 MW",
+        "emissions": 3.7,
+        "age": 35,
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.0143000,8.3042000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.3042,
+          49.0143
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kassel",
+        "date": "15/1/2020",
+        "capacity": "38 MW",
+        "emissions": 0.2,
+        "age": 32,
+        "owner": "City of Kassel",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.2793000,9.4833000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.4833,
+          51.2793
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kiel East",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 1.3,
+        "age": "Retired at the age of 49",
+        "owner": "Uniper",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=54.3387000,10.1770000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          10.177,
+          54.3387
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cologne-Merkenich",
+        "date": "15/1/2020",
+        "capacity": "85 MW",
+        "emissions": 0.5,
+        "age": 10,
+        "owner": "Stadtwerke Köln GmbH (100% City of Cologne)",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.0168000,6.9634000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.9634,
+          51.0168
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Leverkusen",
+        "date": "15/1/2020",
+        "capacity": "112 MW",
+        "emissions": 0.7,
+        "age": 58,
+        "owner": "Currenta GmbH & Co. OHG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.0222000,6.9859000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.9859,
+          51.0222
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Luenen",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 1,
+        "age": "Retired at the age of 56",
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6160000,7.4781000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          7.4781,
+          51.616
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Luenen-Stummhafen",
+        "date": "15/1/2020",
+        "capacity": "820 MW",
+        "emissions": 3.2,
+        "age": 7,
+        "owner": "Trianel Kohlekraftwerk Lünen GmbH & Co. KG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6141000,7.4652000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.4652,
+          51.6141
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mannheim",
+        "date": "15/1/2020",
+        "capacity": "2146 MW",
+        "emissions": 6.7,
+        "age": 38,
+        "owner": "RWE",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.4470000,8.4925000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.4925,
+          49.447
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Marl",
+        "date": "15/1/2020",
+        "capacity": "136 MW",
+        "emissions": 1.6,
+        "age": 49,
+        "owner": "Evonik",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6784000,7.1031000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.1031,
+          51.6784
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Offenbach",
+        "date": "15/1/2020",
+        "capacity": "60 MW",
+        "emissions": 0.2,
+        "age": 30,
+        "owner": "MVV Energie AG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.1113000,8.7454000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.7454,
+          50.1113
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Jaenschwalde",
+        "date": "15/1/2020",
+        "capacity": "3210 MW",
+        "emissions": 22.8,
+        "age": 39,
+        "owner": "EPH",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.8335000,14.4577000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          14.4577,
+          51.8335
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Petershagen Heyden",
+        "date": "15/1/2020",
+        "capacity": "923 MW",
+        "emissions": 1.7,
+        "age": 33,
+        "owner": "Uniper",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.3816000,8.9986000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.9986,
+          52.3816
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pforzheim",
+        "date": "15/1/2020",
+        "capacity": "30 MW",
+        "emissions": 0.1,
+        "age": 30,
+        "owner": "SWP Stadtwerke Pforzheim GmbH & Co. KG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.8970000,8.7255000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          8.7255,
+          48.897
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Quierschied-Weiher",
+        "date": "15/1/2020",
+        "capacity": "724 MW",
+        "emissions": 0,
+        "age": 44,
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.3356000,7.0309000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.0309,
+          49.3356
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rostock",
+        "date": "15/1/2020",
+        "capacity": "553 MW",
+        "emissions": 1.8,
+        "age": 26,
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=54.1428000,12.1329000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          12.1329,
+          54.1428
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Saarbruecken Roemerbruecke",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": "Retired at the age of 0",
+        "owner": "Engie",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.2237000,7.0148000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          7.0148,
+          49.2237
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Schkopau",
+        "date": "15/1/2020",
+        "capacity": "980 MW",
+        "emissions": 6.1,
+        "age": 24,
+        "owner": "Uniper",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.3985000,11.9504000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          11.9504,
+          51.3985
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Schwarze Pumpe",
+        "date": "15/1/2020",
+        "capacity": "1600 MW",
+        "emissions": 12.4,
+        "age": 23,
+        "owner": "EPH",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.5354000,14.3538000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          14.3538,
+          51.5354
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Schweinfurt",
+        "date": "15/1/2020",
+        "capacity": "29 MW",
+        "emissions": 0.1,
+        "age": 30,
+        "owner": "GKS Gemeinschaftskraftwerk Schweinfurt GmbH",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.0301000,10.2236000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          10.2236,
+          50.0301
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Stuttgart-Muenster",
+        "date": "15/1/2020",
+        "capacity": "96 MW",
+        "emissions": 0.3,
+        "age": 38,
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.8154000,9.2197000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.2197,
+          48.8154
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Krefeld-Uerdingen",
+        "date": "15/1/2020",
+        "capacity": "148 MW",
+        "emissions": 0.2,
+        "age": 63,
+        "owner": "Currenta GmbH & Co. OHG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.3682000,6.6624000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.6624,
+          51.3682
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ulm Magirusstrasse",
+        "date": "15/1/2020",
+        "capacity": "135 MW",
+        "emissions": 0,
+        "age": 42,
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.3967000,9.9654000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.9654,
+          48.3967
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Munich North",
+        "date": "15/1/2020",
+        "capacity": "365 MW",
+        "emissions": 1.3,
+        "age": 29,
+        "owner": "Stadtwerke München GmbH",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.1812000,11.6398000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": "202x"
+      },
+      "geometry": {
+        "coordinates": [
+          11.6398,
+          48.1812
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Voelklingen-Fenne model+heat",
+        "date": "15/1/2020",
+        "capacity": "466 MW",
+        "emissions": 0.4,
+        "age": 38,
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.2491000,6.8790000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.879,
+          49.2491
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Voerde",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": "Retired at the age of 35",
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.5762000,6.6841000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          6.6841,
+          51.5762
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Voerde West",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": "Retired at the age of 46",
+        "owner": "STEAG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.5785000,6.6819000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2017
+      },
+      "geometry": {
+        "coordinates": [
+          6.6819,
+          51.5785
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Frechen/Wachtberg",
+        "date": "15/1/2020",
+        "capacity": "128 MW",
+        "emissions": 1.3,
+        "age": 61,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.8942000,6.7911000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.7911,
+          50.8942
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Walheim",
+        "date": "15/1/2020",
+        "capacity": "267 MW",
+        "emissions": 0,
+        "age": 56,
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.0177000,9.1577000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.1577,
+          49.0177
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wedel",
+        "date": "15/1/2020",
+        "capacity": "290 MW",
+        "emissions": 1.2,
+        "age": 59,
+        "owner": "Vattenfall",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.5665000,9.7257000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.7257,
+          53.5665
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Werdohl-Elverlingsen",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0.1,
+        "age": "Retired at the age of 47",
+        "owner": "ENERVIE",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.2754000,7.7046000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          7.7046,
+          51.2754
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Werne Gersteinwerk",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": "Retired at the age of 35",
+        "owner": "RWE",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6734000,7.7080000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2019
+      },
+      "geometry": {
+        "coordinates": [
+          7.708,
+          51.6734
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wilhelmshaven",
+        "date": "15/1/2020",
+        "capacity": "788 MW",
+        "emissions": 1.6,
+        "age": 44,
+        "owner": "Uniper",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.5650000,8.1469000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.1469,
+          53.565
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wolfsburg North",
+        "date": "15/1/2020",
+        "capacity": "140 MW",
+        "emissions": 0.8,
+        "age": 20,
+        "owner": "Volkswagen AG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.4317000,10.7870000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          10.787,
+          52.4317
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wolfsburg West",
+        "date": "15/1/2020",
+        "capacity": "306 MW",
+        "emissions": 1.7,
+        "age": 35,
+        "owner": "Volkswagen AG",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.4295000,10.7683000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          10.7683,
+          52.4295
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wuppertal-Elberfeld",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0.2,
+        "age": "Retired at the age of 29",
+        "owner": "WSW Wuppertaler Stadtwerke GmbH",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.2482000,7.1201000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          7.1201,
+          51.2482
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Zolling-Leininger",
+        "date": "15/1/2020",
+        "capacity": "474 MW",
+        "emissions": 1.2,
+        "age": 34,
+        "owner": "Riverstone",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.4552000,11.7995000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          11.7995,
+          48.4552
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hamburg-Moorburg",
+        "date": "15/1/2020",
+        "capacity": "1640 MW",
+        "emissions": 6.2,
+        "age": 5,
+        "owner": "Vattenfall",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.4897000,9.9482000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.9482,
+          53.4897
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wilhelmshaven Engie",
+        "date": "15/1/2020",
+        "capacity": "795 MW",
+        "emissions": 1.9,
+        "age": 5,
+        "owner": "Riverstone",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.5788000,8.1327000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          8.1327,
+          53.5788
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Frankfurt/Oder",
+        "date": "15/1/2020",
+        "capacity": "49 MW",
+        "emissions": 0.2,
+        "age": 23,
+        "owner": "City of Frankfurt (Oder)",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.3182000,14.5315000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 2022
+      },
+      "geometry": {
+        "coordinates": [
+          14.5315,
+          52.3182
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Stuttgart-Gaisburg",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0.1,
+        "age": "Retired at the age of 9",
+        "owner": "EnBW",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.7827000,9.2312000&zoom=16&basemap=satellite",
+        "status": "Retired",
+        "retirement": 2018
+      },
+      "geometry": {
+        "coordinates": [
+          9.2312,
+          48.7827
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Fortuna Nord",
+        "date": "15/1/2020",
+        "capacity": "16 MW",
+        "emissions": 0.4,
+        "age": 36,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.9869000,6.6581000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.6581,
+          50.9869
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Huerth Ville/Berrenrath",
+        "date": "15/1/2020",
+        "capacity": "57 MW",
+        "emissions": 1,
+        "age": 29,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.8671000,6.8361000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.8361,
+          50.8671
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Stade Dow Chemical",
+        "date": "15/1/2020",
+        "capacity": "0 MW",
+        "emissions": 0,
+        "age": "[Planned]",
+        "owner": "Dow Chemical Co.",
+        "fuel": "Hard coal",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=53.6367980,9.5071760&zoom=16&basemap=satellite",
+        "status": "Planned",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          9.5072,
+          53.6368
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Huerth Goldenberg",
+        "date": "15/1/2020",
+        "capacity": "76 MW",
+        "emissions": 0.8,
+        "age": 28,
+        "owner": "RWE",
+        "fuel": "Lignite",
+        "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=50.8610000,6.8434000&zoom=16&basemap=satellite",
+        "status": "Open",
+        "retirement": 0
+      },
+      "geometry": {
+        "coordinates": [
+          6.8434,
+          50.861
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}
