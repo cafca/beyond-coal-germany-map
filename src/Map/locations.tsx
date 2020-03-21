@@ -2,8 +2,6 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import MapboxGL from "mapbox-gl";
 
-import sampleData from "./sample.json";
-
 const PopupContent = ({
   title,
   date,
