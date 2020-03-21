@@ -1,13 +1,37 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+}
+
+body,
+.mapboxgl-map {
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.popup h1 {
+  font-size: 1.5em;
+}
+
+.popup ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .mapboxgl-popup {
+    position: absolute;
+    top: initial;
+    bottom: 0;
+    width: 100vw;
+    height: 80vh;
+    transform: none !important;
+    max-width: none !important;
+    will-change: initial !important;
+    z-index: 3;
+  }
+
+  .mapboxgl-popup-content {
+    height: 100%;
+  }
 }

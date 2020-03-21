@@ -14,7 +14,7 @@ const PopupContent = ({
   status,
   retirement
 }) => (
-  <>
+  <span className="popup">
     <h1>{title}</h1>
     <p>
       Kapazität ({date}): {capacity}
@@ -30,7 +30,7 @@ const PopupContent = ({
     <p>
       <a href={maps}>Auf Google Maps anschauen</a>
     </p>
-  </>
+  </span>
 );
 
 const addLocations = map => {
