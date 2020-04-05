@@ -6,6 +6,9 @@ const styles = {
 export default {
   mapbox: {
     token: process.env.REACT_APP_MAPBOX_TOKEN || "",
-    style: styles.vincent
+    style: styles.vincent,
+    layers: {
+      plants: "plants"
+    }
   }
 };

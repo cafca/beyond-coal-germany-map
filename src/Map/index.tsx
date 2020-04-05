@@ -12,25 +12,25 @@ const styles: CSSProperties = {
 
 type ContainerType = React.MutableRefObject<null | HTMLDivElement>;
 
+const initMap = ({ setMap, mapContainer }) => {
+  const map = new MapboxGL.Map({
+    container: mapContainer.current,
+    style: config.mapbox.style
+  });
+
+  map.on("load", () => {
+    setMap(map);
+    map.resize();
+  });
+  addLocations(map);
+};
+
 const Map = () => {
   const [map, setMap] = useState(null);
   const mapContainer: ContainerType = useRef(null);
 
   useEffect(() => {
     MapboxGL.accessToken = config.mapbox.token;
-    const initMap = ({ setMap, mapContainer }) => {
-      const map = new MapboxGL.Map({
-        container: mapContainer.current,
-        style: config.mapbox.style
-      });
-
-      map.on("load", () => {
-        setMap(map);
-        map.resize();
-      });
-      addLocations(map);
-    };
-
     if (map == null) initMap({ setMap, mapContainer });
   }, [map]);
 
