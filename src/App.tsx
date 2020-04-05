@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 import "./App.css";
 
+import MainMenu from "./MainMenu";
 import Map from "./Map";
-import Menu from "./Menu";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core";
+import SearchBar from "./SearchBar";
 
 const theme = createMuiTheme({
   typography: {
@@ -13,11 +14,21 @@ const theme = createMuiTheme({
 });
 
 function App() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isFilterOpen, setFilterOpen] = useState(false);
+
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Menu />
-        <Map />
+        <SearchBar
+          handleMenuClick={() => setMenuOpen(!isMenuOpen)}
+          handleFilterClick={() => setFilterOpen(!isFilterOpen)}
+        />
+        <MainMenu isOpen={isMenuOpen} handleClose={() => setMenuOpen(false)} />
+        <Map
+          isFilterOpen={isFilterOpen}
+          handleFilterClose={() => setFilterOpen(false)}
+        />
       </ThemeProvider>
     </div>
   );

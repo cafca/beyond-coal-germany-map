@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, CSSProperties } from "react";
 import MapboxGL from "mapbox-gl";
 
 import config from "../config";
+import FilterMenu from "../FilterMenu";
 import MapControls from "../MapControls";
 import addLocations from "./locations";
 
@@ -39,7 +40,7 @@ const initMap = ({ setMap, mapContainer }) => {
     });
 };
 
-const Map = () => {
+const Map = ({ isFilterOpen, handleFilterClose }) => {
   const [map, setMap] = useState(null);
   const mapContainer: ContainerType = useRef(null);
 
@@ -59,6 +60,7 @@ const Map = () => {
         handleZoomIn={() => onZoomIn()}
         handleZoomOut={() => onZoomOut()}
       />
+      <FilterMenu isOpen={isFilterOpen} handleClose={handleFilterClose} />
     </div>
   );
 };
