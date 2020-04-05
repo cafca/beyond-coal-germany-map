@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState, CSSProperties } from "react";
 import MapboxGL from "mapbox-gl";
-import addLocations from "./locations";
 
 import config from "../config";
+import MapControls from "../MapControls";
+import addLocations from "./locations";
 
 const styles: CSSProperties = {
   width: "100vw",
@@ -11,6 +12,9 @@ const styles: CSSProperties = {
 };
 
 type ContainerType = React.MutableRefObject<null | HTMLDivElement>;
+
+let onZoomOut = () => console.log("Map not loaded yet");
+let onZoomIn = () => console.log("Map not loaded yet");
 
 const initMap = ({ setMap, mapContainer }) => {
   const map = new MapboxGL.Map({
@@ -21,8 +25,18 @@ const initMap = ({ setMap, mapContainer }) => {
   map.on("load", () => {
     setMap(map);
     map.resize();
+    // map.addControl(new MapboxGL.NavigationControl(), "bottom-right");
+    // map.addControl(new MapboxGL.GeolocateControl(), "bottom-left");
   });
   addLocations(map);
+  onZoomOut = () =>
+    map.easeTo({
+      zoom: map.getZoom() - 1
+    });
+  onZoomIn = () =>
+    map.easeTo({
+      zoom: map.getZoom() + 1
+    });
 };
 
 const Map = () => {
@@ -40,7 +54,12 @@ const Map = () => {
         if (mapContainer != null) mapContainer.current = el;
       }}
       style={styles}
-    ></div>
+    >
+      <MapControls
+        handleZoomIn={() => onZoomIn()}
+        handleZoomOut={() => onZoomOut()}
+      />
+    </div>
   );
 };
 
