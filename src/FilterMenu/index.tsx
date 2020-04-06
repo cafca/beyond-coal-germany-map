@@ -11,11 +11,30 @@ import PinIcon from "@material-ui/icons/Room";
 import Chip from "@material-ui/core/Chip";
 import Avatar from "@material-ui/core/Avatar";
 
+import GruppeIcon from "../Icons/Gruppe.svg";
+import GruppeKlagenIcon from "../Icons/Gruppe Klage.svg";
+import GruppeZUIcon from "../Icons/Gruppe ZU.svg";
+
+import DorfIcon from "../Icons/Dörfer.svg";
+import DorfKircheIcon from "../Icons/Kirche.svg";
+
+import TagebauIcon from "../Icons/Tagebau.svg";
+
+import KraftwerkIcon from "../Icons/Kraftwerk.svg";
+import KraftwerkSteinkohleIcon from "../Icons/Steinkohle.svg";
+import KraftwerkBraunkohleIcon from "../Icons/Braunkohle.svg";
+import KraftwerkGasIcon from "../Icons/Gas.svg";
+
+import KraftwerkInBauIcon from "../Icons/In Bau.svg";
+import KraftwerkAktivIcon from "../Icons/Aktiv.svg";
+import KraftwerkAbschaltungIcon from "../Icons/Vor Absch.svg";
+import KraftwerkAbgeschaltetIcon from "../Icons/Abgeschaltet.svg";
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     wrapper: {
       width: "14em",
-      padding: "1em"
+      padding: "1em",
     },
     heading: {
       fontVariant: "all-caps",
@@ -27,79 +46,132 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingRight: "8px",
       "& svg": {
         width: "1.4em",
-        height: "1.4em"
-      }
+        height: "1.4em",
+      },
     },
     list: {
-      fontWeight: "bold"
+      fontWeight: "bold",
     },
     filterListing: {
-      marginTop: "3em"
+      marginTop: "2em",
     },
     spacer: {
-      marginBottom: "1em"
+      marginBottom: "1em",
     },
     info: {
-      fontSize: "0.9em"
-    }
+      fontSize: "0.9em",
+    },
+    svgIcon: {
+      "& > img": {
+        height: "1.5em",
+        width: "1.25em",
+      },
+    },
+    sectionChip: {
+      marginTop: "1em",
+      "& > span": {
+        textTransform: "uppercase",
+        fontWeight: "bold",
+      },
+    },
+    optionItem: {
+      "& > div": {
+        minWidth: "2em",
+      },
+    },
   })
 );
 
 const contents = [
   {
     title: "Gruppe",
-    options: [{ title: "Klagen" }, { title: "Ziviler Ungehorsam" }]
+    icon: GruppeIcon,
+    options: [
+      { title: "Klagen", icon: GruppeKlagenIcon },
+      { title: "Ziviler Ungehorsam", icon: GruppeZUIcon },
+    ],
   },
   {
     title: "Dorf",
-    options: [{ title: "Mit Kirche" }]
+    icon: DorfIcon,
+    options: [{ title: "Mit Kirche", icon: DorfKircheIcon }],
   },
   {
-    title: "Tagebau"
+    title: "Tagebau",
+    icon: TagebauIcon,
   },
   {
     title: "Kraftwerk",
+    icon: KraftwerkIcon,
     options: [
-      { title: "Steinkohle" },
-      { title: "Braunkohle" },
-      { title: "Gas" }
-    ]
-  }
+      { title: "Steinkohle", icon: KraftwerkSteinkohleIcon },
+      { title: "Braunkohle", icon: KraftwerkBraunkohleIcon },
+      { title: "Gas", icon: KraftwerkGasIcon },
+    ],
+    variants: [
+      { title: "In Bau", icon: KraftwerkInBauIcon },
+      { title: "Aktiv", icon: KraftwerkAktivIcon },
+      { title: "Vor Abschaltung", icon: KraftwerkAbschaltungIcon },
+      { title: "Abgeschaltet", icon: KraftwerkAbgeschaltetIcon },
+    ],
+  },
 ];
 
 interface OptionProps {
   title: string;
+  icon?: string;
+  variant?: boolean;
 }
 
 interface FilterSectionProps {
   title: string;
+  icon: string;
   options?: OptionProps[];
+  variants?: OptionProps[];
 }
 
-const Option: React.FC<OptionProps> = ({ title }) => {
+const Option: React.FC<OptionProps> = ({ title, icon }) => {
+  const classes = useStyles();
   return (
-    <ListItem>
-      <ListItemIcon>
-        <PinIcon />
+    <ListItem className={classes.optionItem}>
+      <ListItemIcon className={classes.svgIcon}>
+        {icon == null ? <PinIcon /> : <img src={icon} alt="" />}
       </ListItemIcon>
       <ListItemText>{title}</ListItemText>
     </ListItem>
   );
 };
 
-const FilterSection: React.FC<FilterSectionProps> = ({ title, options }) => {
+const FilterSection: React.FC<FilterSectionProps> = ({
+  title,
+  icon,
+  options,
+  variants,
+}) => {
   const classes = useStyles();
   const optionEntries =
-    options == null ? [] : options.map(option => <Option {...option} />);
+    options == null ? [] : options.map((option) => <Option {...option} />);
+  const variantEntries =
+    variants == null
+      ? []
+      : variants.map((variant) => <Option {...variant} variant={true} />);
   return (
     <div>
       <Chip
         label={title}
         variant="outlined"
-        avatar={<Avatar>{title[0]}</Avatar>}
+        className={classes.sectionChip}
+        avatar={<Avatar alt="" src={icon} className={classes.svgIcon} />}
       />
       {optionEntries.length > 0 && (
-        <List className={classes.list}>{optionEntries}</List>
+        <List className={classes.list} dense={true}>
+          {optionEntries}
+        </List>
+      )}
+      {variantEntries.length > 0 && (
+        <List className={classes.list} dense={true}>
+          {variantEntries}
+        </List>
       )}
       {optionEntries.length === 0 && <div className={classes.spacer}></div>}
     </div>
@@ -108,10 +180,12 @@ const FilterSection: React.FC<FilterSectionProps> = ({ title, options }) => {
 
 const FilterMenu = ({ isOpen, handleClose }) => {
   const classes = useStyles();
-  const filterEntries = contents.map(section => <FilterSection {...section} />);
+  const filterEntries = contents.map((section) => (
+    <FilterSection {...section} />
+  ));
 
   return (
-    <Drawer anchor="right" open={isOpen} onClose={handleClose}>
+    <Drawer anchor="right" open={true} onClose={handleClose}>
       <div className={classes.wrapper}>
         <div className={classes.heading}>
           <IconButton onClick={handleClose}>
