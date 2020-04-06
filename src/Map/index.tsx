@@ -4,12 +4,13 @@ import MapboxGL from "mapbox-gl";
 import config from "../config";
 import FilterMenu from "../FilterMenu";
 import MapControls from "../MapControls";
-import addLocations from "./locations";
+
+import utils from "./utils";
 
 const styles: CSSProperties = {
   width: "100vw",
   height: "100vh",
-  position: "absolute"
+  position: "absolute",
 };
 
 type ContainerType = React.MutableRefObject<null | HTMLDivElement>;
@@ -20,7 +21,7 @@ let onZoomIn = () => console.log("Map not loaded yet");
 const initMap = ({ setMap, mapContainer }) => {
   const map = new MapboxGL.Map({
     container: mapContainer.current,
-    style: config.mapbox.style
+    style: config.mapbox.style,
   });
 
   map.on("load", () => {
@@ -28,15 +29,17 @@ const initMap = ({ setMap, mapContainer }) => {
     map.resize();
     // map.addControl(new MapboxGL.NavigationControl(), "bottom-right");
     // map.addControl(new MapboxGL.GeolocateControl(), "bottom-left");
+
+    utils.configureMouseCursor(map);
   });
-  addLocations(map);
+  utils.configurePopup(map);
   onZoomOut = () =>
     map.easeTo({
-      zoom: map.getZoom() - 1
+      zoom: map.getZoom() - 1,
     });
   onZoomIn = () =>
     map.easeTo({
-      zoom: map.getZoom() + 1
+      zoom: map.getZoom() + 1,
     });
 };
 
@@ -51,7 +54,7 @@ const Map = ({ isFilterOpen, handleFilterClose }) => {
 
   return (
     <div
-      ref={el => {
+      ref={(el) => {
         if (mapContainer != null) mapContainer.current = el;
       }}
       style={styles}
@@ -60,7 +63,11 @@ const Map = ({ isFilterOpen, handleFilterClose }) => {
         handleZoomIn={() => onZoomIn()}
         handleZoomOut={() => onZoomOut()}
       />
-      <FilterMenu isOpen={isFilterOpen} handleClose={handleFilterClose} />
+      <FilterMenu
+        isOpen={isFilterOpen}
+        handleClose={handleFilterClose}
+        map={map}
+      />
     </div>
   );
 };

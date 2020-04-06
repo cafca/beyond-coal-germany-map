@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
@@ -11,6 +11,7 @@ import PinIcon from "@material-ui/icons/Room";
 import Chip from "@material-ui/core/Chip";
 import Avatar from "@material-ui/core/Avatar";
 
+import config from "../config";
 import GruppeIcon from "../Icons/Gruppe.svg";
 import GruppeKlagenIcon from "../Icons/Gruppe Klage.svg";
 import GruppeZUIcon from "../Icons/Gruppe ZU.svg";
@@ -188,11 +189,19 @@ const FilterSection: React.FC<FilterSectionProps> = ({
   );
 };
 
-const FilterMenu = ({ isOpen, handleClose }) => {
+const FilterMenu = ({ isOpen, handleClose, map }) => {
   const classes = useStyles();
   const filterEntries = contents.map((section) => (
     <FilterSection {...section} key={`filtersection-${section.title}`} />
   ));
+  const filters = [["==", ["get", "fuel"], "Hard coal"]];
+
+  useEffect(() => {
+    if (map != null)
+      map.setFilter(config.mapbox.layers.plants, ["any", ...filters], {
+        validate: config.debug,
+      });
+  }, [filters, map]);
 
   return (
     <Drawer anchor="right" open={isOpen} onClose={handleClose}>
