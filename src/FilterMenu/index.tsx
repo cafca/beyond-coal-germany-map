@@ -33,12 +33,12 @@ import KraftwerkAbgeschaltetIcon from "../Icons/Abgeschaltet.svg";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     wrapper: {
-      width: "14em",
+      width: "12em",
       padding: "1em",
     },
     heading: {
       fontVariant: "all-caps",
-      fontSize: "1.8em",
+      fontSize: "1.4em",
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
@@ -185,7 +185,7 @@ const FilterMenu = ({ isOpen, handleClose }) => {
   ));
 
   return (
-    <Drawer anchor="right" open={true} onClose={handleClose}>
+    <Drawer anchor="right" open={isOpen} onClose={handleClose}>
       <div className={classes.wrapper}>
         <div className={classes.heading}>
           <IconButton onClick={handleClose}>
