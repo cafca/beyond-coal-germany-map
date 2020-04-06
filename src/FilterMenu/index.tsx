@@ -150,11 +150,21 @@ const FilterSection: React.FC<FilterSectionProps> = ({
 }) => {
   const classes = useStyles();
   const optionEntries =
-    options == null ? [] : options.map((option) => <Option {...option} />);
+    options == null
+      ? []
+      : options.map((option) => (
+          <Option {...option} key={`option-${option.title}`} />
+        ));
   const variantEntries =
     variants == null
       ? []
-      : variants.map((variant) => <Option {...variant} variant={true} />);
+      : variants.map((variant) => (
+          <Option
+            {...variant}
+            key={`variant-${variant.title}`}
+            variant={true}
+          />
+        ));
   return (
     <div>
       <Chip
@@ -181,7 +191,7 @@ const FilterSection: React.FC<FilterSectionProps> = ({
 const FilterMenu = ({ isOpen, handleClose }) => {
   const classes = useStyles();
   const filterEntries = contents.map((section) => (
-    <FilterSection {...section} />
+    <FilterSection {...section} key={`filtersection-${section.title}`} />
   ));
 
   return (
