@@ -9,8 +9,8 @@ import SearchBar from "./SearchBar";
 const theme = createMuiTheme({
   typography: {
     fontFamily:
-      '"Open Sans", --apple-system, "Helvetica Neue", Arial, sans-serif'
-  }
+      '"Open Sans", --apple-system, "Helvetica Neue", Arial, sans-serif',
+  },
 });
 
 function App() {

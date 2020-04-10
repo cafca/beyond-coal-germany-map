@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, CSSProperties } from "react";
 import MapboxGL from "mapbox-gl";
 
 import config from "../config";
-import FilterMenu from "../FilterMenu";
+import FilterMenu from "../Filter";
 import MapControls from "../MapControls";
 
 import utils from "./utils";
