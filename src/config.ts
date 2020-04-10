@@ -87,7 +87,11 @@ const config: Config = {
           icon: KraftwerkAktivIcon,
           filter: ["==", ["get", "status"], "Open"],
         },
-        { title: "Vor Abschaltung", icon: KraftwerkAbschaltungIcon },
+        {
+          title: "Vor Abschaltung",
+          icon: KraftwerkAbschaltungIcon,
+          filter: ["==", ["get", "status"], "Retiring"],
+        },
         {
           title: "Abgeschaltet",
           icon: KraftwerkAbgeschaltetIcon,
