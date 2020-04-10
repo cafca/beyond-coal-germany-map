@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 IN_PATH = "public/data/powerplants.json"
-OUT_PATH = "public/data/plants.json"
+OUT_PATH = "public/data/plants.geojson"
 
 
 def read_data():
