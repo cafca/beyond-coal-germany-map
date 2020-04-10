@@ -77,7 +77,7 @@
         "owner": "Vattenfall",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.5374000,13.3449000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2030
       },
       "geometry": {
@@ -143,7 +143,7 @@
         "owner": "Vattenfall",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.5352000,13.2437000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2030
       },
       "geometry": {
@@ -341,7 +341,7 @@
         "owner": "Stadtwerke Cottbus GmbH",
         "fuel": "Lignite",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.7597000,14.3696000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2022
       },
       "geometry": {
@@ -473,7 +473,7 @@
         "owner": "City of Erlangen",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=49.5925000,11.0021000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2021
       },
       "geometry": {
@@ -561,7 +561,7 @@
         "owner": "Uniper",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.6024000,7.0099000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": "202x"
       },
       "geometry": {
@@ -583,7 +583,7 @@
         "owner": "RWE",
         "fuel": "Lignite",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=51.0585000,6.5825000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2021
       },
       "geometry": {
@@ -737,7 +737,7 @@
         "owner": "EPH",
         "fuel": "Lignite",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.1724000,10.9768000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2020
       },
       "geometry": {
@@ -1133,7 +1133,7 @@
         "owner": "SWP Stadtwerke Pforzheim GmbH & Co. KG",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.8970000,8.7255000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2022
       },
       "geometry": {
@@ -1353,7 +1353,7 @@
         "owner": "Stadtwerke München GmbH",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=48.1812000,11.6398000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": "202x"
       },
       "geometry": {
@@ -1573,7 +1573,7 @@
         "owner": "Volkswagen AG",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.4317000,10.7870000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2022
       },
       "geometry": {
@@ -1595,7 +1595,7 @@
         "owner": "Volkswagen AG",
         "fuel": "Hard coal",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.4295000,10.7683000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2022
       },
       "geometry": {
@@ -1705,7 +1705,7 @@
         "owner": "City of Frankfurt (Oder)",
         "fuel": "Lignite",
         "maps": "https://www.google.com/maps/@?api=1&map_action=map&center=52.3182000,14.5315000&zoom=16&basemap=satellite",
-        "status": "Open",
+        "status": "Retiring",
         "retirement": 2022
       },
       "geometry": {

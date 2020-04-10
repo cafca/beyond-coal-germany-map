@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 IN_PATH = "public/data/powerplants.json"
-OUT_PATH = "public/data/plants.geojson"
+OUT_PATH = "public/data/plants.json"
 
 
 def read_data():
@@ -26,10 +26,29 @@ def filter_plants(data):
     return plants.values()
 
 
+def is_plant_retiring(plant):
+    """Apply tests to find out whether plant is retiring."""
+
+    # All plants that are retiring are currently open
+    if plant["status"] != "Open":
+        return False
+
+    # All plants that are not retiring have a retYear of 0
+    if (type(plant["retYear"])) == int:
+        return plant["retYear"] > 0
+
+    # Some plants that are retiring have a retYear that is a string,
+    # such as "202x". All of these start with a number larger than 0.
+    return int(plant["retYear"][0]) > 0
+
+
 def transform_geojson(plants):
     rv = {"features": [], "type": "FeatureCollection"}
 
     for plant in plants:
+        if is_plant_retiring(plant):
+            plant["status"] = "Retiring"
+
         plant_feature = {
             "type": "Feature",
             "properties": {
