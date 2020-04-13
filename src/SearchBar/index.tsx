@@ -1,33 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import IconButton from "@material-ui/core/IconButton";
-import InputBase from "@material-ui/core/InputBase";
 import MenuIcon from "@material-ui/icons/Menu";
 import Tune from "@material-ui/icons/Tune";
+import { Button, IconButton, InputBase } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     wrapper: {
       position: "absolute",
       width: "100%",
-      "z-index": 10
+      "z-index": 10,
     },
-    menuButton: {},
     search: {
       display: "flex",
       margin: theme.spacing(2),
       "text-align": "initial",
       "background-color": "white",
       [theme.breakpoints.up("md")]: {
-        "max-width": "30em"
-      }
+        "max-width": "30em",
+      },
     },
     inputRoot: {
-      color: "inherit"
+      color: "inherit",
     },
     inputInput: {
-      padding: theme.spacing(1, 1, 1, 0)
-    }
+      padding: theme.spacing(1, 1, 1, 1),
+    },
+    menuButton: {
+      borderRadius: 0,
+    },
+    filterButton: {
+      paddingLeft: theme.spacing(4),
+    },
+    filterButtonLabel: {
+      paddingRight: theme.spacing(3),
+    },
   })
 );
 
@@ -36,8 +43,13 @@ interface Props {
   handleFilterClick: () => void;
 }
 
+const search = console.log;
+
 const SearchBar: React.FC<Props> = ({ handleMenuClick, handleFilterClick }) => {
   const classes = useStyles();
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState(null);
+  useEffect(() => setResults(search(query)), [query]);
 
   return (
     <div className={classes.wrapper}>
@@ -47,7 +59,9 @@ const SearchBar: React.FC<Props> = ({ handleMenuClick, handleFilterClick }) => {
           color="inherit"
           aria-label="Menü öffnen"
           onClick={handleMenuClick}
-          disableFocusRipple={true}
+          classes={{
+            root: classes.menuButton,
+          }}
         >
           <MenuIcon />
         </IconButton>
@@ -56,19 +70,25 @@ const SearchBar: React.FC<Props> = ({ handleMenuClick, handleFilterClick }) => {
           fullWidth={true}
           classes={{
             root: classes.inputRoot,
-            input: classes.inputInput
+            input: classes.inputInput,
           }}
           autoFocus={true}
           inputProps={{ "aria-label": "search" }}
+          value={query}
+          onChange={({ target: { value } }) => setQuery(value)}
         />
-        <IconButton
+        <Button
           aria-label="Kartenfilter"
           onClick={handleFilterClick}
           color="inherit"
-          disableFocusRipple={true}
+          startIcon={<Tune />}
+          classes={{
+            root: classes.filterButton,
+            label: classes.filterButtonLabel,
+          }}
         >
-          <Tune />
-        </IconButton>
+          Filter
+        </Button>
       </div>
     </div>
   );
