@@ -10,14 +10,14 @@ const PopupContent = ({
   fuel,
   maps,
   status,
-  retirement
+  retirement,
 }) => (
   <span className="popup">
     <h1>{title}</h1>
     <p>
       Kapazität ({date}): {capacity}
     </p>
-    <p>CO2 emissions: {emissions}</p>
+    <p>CO2 emissions: {emissions} Mt</p>
     <ul>
       <li>Alter: {age}</li>
       <li>Besitzer: {owner}</li>
