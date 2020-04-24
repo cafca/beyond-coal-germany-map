@@ -24,6 +24,7 @@ const initMap = ({ setMap, mapContainer }) => {
     style: config.mapbox.style,
     center: [10.296, 51.183],
     zoom: 4.75,
+    maxBounds: config.mapbox.bounds,
   });
 
   map.on("load", () => {

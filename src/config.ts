@@ -21,7 +21,8 @@ import { SectionType } from "./types";
 const styles = {
   ramin: "mapbox://styles/daydreaming101/ck7bmt24v0hxj1itfln4af2l9",
   vincent: "mapbox://styles/atlasblau/ck7uzuyo904ew1ipnafk3r4zg?fresh=true",
-  klimaallianz: "mapbox://styles/fabian-huebner/ck98l6ypr18u71io6v1afp8vz",
+  klimaallianz:
+    "mapbox://styles/fabian-huebner/ck98l6ypr18u71io6v1afp8vz?fresh=true",
 };
 
 interface Config {
@@ -29,7 +30,10 @@ interface Config {
   mapbox: {
     token: string;
     style: string;
-    layers: any;
+    layers: {
+      [name: string]: string;
+    };
+    bounds: [[number, number], [number, number]];
   };
   filters: SectionType[];
 }
@@ -42,20 +46,19 @@ const config: Config = {
     layers: {
       plants: "plants",
     },
+    bounds: [
+      [1.52, 45.161239], //ws
+      [19.2, 57.03824], //en
+    ],
   },
   filters: [
     {
       title: "Gruppe",
       icon: GruppeIcon,
-      options: [
-        { title: "Klagen", icon: GruppeKlagenIcon },
-        { title: "Ziviler Ungehorsam", icon: GruppeZUIcon },
-      ],
     },
     {
       title: "Dorf",
       icon: DorfIcon,
-      options: [{ title: "Mit Kirche", icon: DorfKircheIcon }],
     },
     {
       title: "Tagebau",
@@ -75,7 +78,6 @@ const config: Config = {
           icon: KraftwerkBraunkohleIcon,
           filter: ["==", ["get", "fuel"], "Lignite"],
         },
-        { title: "Gas", icon: KraftwerkGasIcon },
       ],
       variants: [
         {
