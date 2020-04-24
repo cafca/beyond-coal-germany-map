@@ -22,6 +22,8 @@ const initMap = ({ setMap, mapContainer }) => {
   const map = new MapboxGL.Map({
     container: mapContainer.current,
     style: config.mapbox.style,
+    center: [10.296, 51.183],
+    zoom: 4.75,
   });
 
   map.on("load", () => {
