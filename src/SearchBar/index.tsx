@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { renderToString } from "react-dom/server";
 import MapboxGL from "mapbox-gl";
+import Fuse from "fuse.js";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import { Popper } from "@material-ui/core";
 import Autocomplete from "@material-ui/lab/Autocomplete";
@@ -45,18 +46,37 @@ const SearchBar: React.FC<Props> = ({
   const refContainer = useRef(null);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState(null);
+  const [features, setFeatures] = useState(null);
+  const [timer, setTimer] = useState(null);
+
+  const attemptLoading = () => {
+    if (map?.isStyleLoaded()) {
+      const results = map
+        ?.querySourceFeatures("composite", {
+          sourceLayer: config.search.source,
+        })
+        .sort(sortResults);
+      setFeatures(results);
+    } else {
+      clearTimeout(timer);
+      setTimer(setTimeout(attemptLoading, 300));
+    }
+  };
+
+  useEffect(() => {
+    if (features == null) return;
+    const fuse = new Fuse(features, {
+      keys: ["properties.title"],
+    });
+    setResults(fuse.search(query));
+  }, [features, query]);
 
   // Execute search when query changes
   useEffect(() => {
-    if (query.length === 0) return setResults([]);
-    const results = map
-      ?.querySourceFeatures("composite", {
-        sourceLayer: config.search.source,
-        filter: config.search.query(query),
-      })
-      .sort(sortResults);
-    setResults(results);
-  }, [query, map]);
+    if (map) {
+      attemptLoading();
+    }
+  }, [map]);
 
   // Handle selecting a search result
   const onResultSelect = (_, feature) => {
@@ -75,12 +95,13 @@ const SearchBar: React.FC<Props> = ({
 
   return (
     <Autocomplete
+      disabled={features == null}
       freeSolo
       inputValue={query}
       blurOnSelect={true}
       onInputChange={(_, value) => setQuery(value)}
       onChange={onResultSelect}
-      options={results == null ? [] : results}
+      options={results == null ? [] : results.map((res) => res.item)}
       getOptionLabel={(option) => option.properties.title}
       autoHighlight={true}
       PopperComponent={(props) => (
