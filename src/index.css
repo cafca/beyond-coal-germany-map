@@ -27,23 +27,16 @@ body,
 }
 
 .mapboxgl-popup-close-button {
-  font-size: 25px;
-  background-color: #333;
-  border: 1px solid white;
-  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background-image: url("/images/close-icon.png");
   color: white;
-  width: 30px;
-  height: 30px;
-  line-height: 0;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  top: 0.4em;
-  right: 0.4em;
+  top: 10px;
+  right: 10px;
 }
 
 .mapboxgl-popup-close-button:hover {
-  background-color: #888;
+  opacity: 0.6;
 }
 
 @media only screen and (max-width: 600px) {
