@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 
-IN_PATH = "public/data/powerplants.json"
+IN_PATH = "data/powerplants.json"
 OUT_PATH = "public/data/plants.geojson"
 
 
