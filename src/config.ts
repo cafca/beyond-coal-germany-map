@@ -1,16 +1,16 @@
 import GruppeIcon from "./Icons/Gruppe.svg";
-import GruppeKlagenIcon from "./Icons/Gruppe Klage.svg";
-import GruppeZUIcon from "./Icons/Gruppe ZU.svg";
+// import GruppeKlagenIcon from "./Icons/Gruppe Klage.svg";
+// import GruppeZUIcon from "./Icons/Gruppe ZU.svg";
 
 import DorfIcon from "./Icons/Dörfer.svg";
-import DorfKircheIcon from "./Icons/Kirche.svg";
+// import DorfKircheIcon from "./Icons/Kirche.svg";
 
 import TagebauIcon from "./Icons/Tagebau.svg";
 
 import KraftwerkIcon from "./Icons/Kraftwerk.svg";
 import KraftwerkSteinkohleIcon from "./Icons/Steinkohle.svg";
 import KraftwerkBraunkohleIcon from "./Icons/Braunkohle.svg";
-import KraftwerkGasIcon from "./Icons/Gas.svg";
+// import KraftwerkGasIcon from "./Icons/Gas.svg";
 
 import KraftwerkInBauIcon from "./Icons/In Bau.svg";
 import KraftwerkAktivIcon from "./Icons/Aktiv.svg";
@@ -51,8 +51,8 @@ const config: Config = {
       plants: "plants",
     },
     bounds: [
-      [1.52, 45.161239], //ws
-      [19.2, 57.03824], //en
+      [1.52, 44.161239], //ws
+      [19.2, 58.03824], //en
     ],
   },
   search: {
