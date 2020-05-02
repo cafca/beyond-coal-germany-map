@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme: Theme) =>
       "& .MuiAutocomplete-paper": {
         borderRadius: 0,
         margin: "0 20px 0 10px",
+        [theme.breakpoints.up("md")]: {
+          margin: "initial",
+        },
       },
     },
   })
