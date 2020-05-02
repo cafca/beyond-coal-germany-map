@@ -1,39 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { renderToString } from "react-dom/server";
+import MapboxGL from "mapbox-gl";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import MenuIcon from "@material-ui/icons/Menu";
-import Tune from "@material-ui/icons/Tune";
-import { Button, IconButton, InputBase } from "@material-ui/core";
+import { Popper } from "@material-ui/core";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import InputElement from "./InputElement";
+import Popup from "../Popup";
+import config from "../config";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    wrapper: {
-      position: "absolute",
-      width: "100%",
-      "z-index": 10,
-    },
-    search: {
-      display: "flex",
-      margin: theme.spacing(2),
-      "text-align": "initial",
-      "background-color": "white",
+    popper: {
+      margin: "-20px 0 0 11px",
+      width: "100% !important",
       [theme.breakpoints.up("md")]: {
         "max-width": "30em",
       },
-    },
-    inputRoot: {
-      color: "inherit",
-    },
-    inputInput: {
-      padding: theme.spacing(1, 1, 1, 1),
-    },
-    menuButton: {
-      borderRadius: 0,
-    },
-    filterButton: {
-      paddingLeft: theme.spacing(4),
-    },
-    filterButtonLabel: {
-      paddingRight: theme.spacing(3),
+      "& .MuiAutocomplete-paper": {
+        borderRadius: 0,
+      },
     },
   })
 );
@@ -41,56 +26,76 @@ const useStyles = makeStyles((theme: Theme) =>
 interface Props {
   handleMenuClick: () => void;
   handleFilterClick: () => void;
+  map?: MapboxGL.Map;
 }
 
-const search = console.log;
+const sortResults = (a, b) =>
+  a.properties.status.localeCompare(b.properties.status);
 
-const SearchBar: React.FC<Props> = ({ handleMenuClick, handleFilterClick }) => {
+const SearchBar: React.FC<Props> = ({
+  handleMenuClick,
+  handleFilterClick,
+  map,
+}) => {
   const classes = useStyles();
+  const refContainer = useRef(null);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState(null);
-  useEffect(() => setResults(search(query)), [query]);
+
+  // Execute search when query changes
+  useEffect(() => {
+    if (query.length === 0) return setResults([]);
+    const results = map
+      ?.querySourceFeatures("composite", {
+        sourceLayer: config.search.source,
+        filter: config.search.query(query),
+      })
+      .sort(sortResults);
+    setResults(results);
+  }, [query, map]);
+
+  // Handle selecting a search result
+  const onResultSelect = (_, feature) => {
+    if (feature == null) return;
+
+    setQuery("");
+    const coordinates = feature.geometry.coordinates.slice();
+
+    map.flyTo({ center: coordinates, zoom: 11 });
+
+    new MapboxGL.Popup()
+      .setLngLat(coordinates)
+      .setHTML(renderToString(<Popup {...feature.properties}></Popup>))
+      .addTo(map);
+  };
 
   return (
-    <div className={classes.wrapper}>
-      <div className={classes.search}>
-        <IconButton
-          className={classes.menuButton}
-          color="inherit"
-          aria-label="Menü öffnen"
-          onClick={handleMenuClick}
-          classes={{
-            root: classes.menuButton,
-          }}
-        >
-          <MenuIcon />
-        </IconButton>
-        <InputBase
-          placeholder="Was suchst du?"
-          fullWidth={true}
-          classes={{
-            root: classes.inputRoot,
-            input: classes.inputInput,
-          }}
-          autoFocus={true}
-          inputProps={{ "aria-label": "search" }}
-          value={query}
-          onChange={({ target: { value } }) => setQuery(value)}
+    <Autocomplete
+      freeSolo
+      inputValue={query}
+      blurOnSelect={true}
+      onInputChange={(_, value) => setQuery(value)}
+      onChange={onResultSelect}
+      options={results == null ? [] : results}
+      getOptionLabel={(option) => option.properties.title}
+      autoHighlight={true}
+      PopperComponent={(props) => (
+        <Popper
+          {...props}
+          className={classes.popper}
+          anchorEl={refContainer.current}
+          placement="bottom-start"
         />
-        <Button
-          aria-label="Kartenfilter"
-          onClick={handleFilterClick}
-          color="inherit"
-          startIcon={<Tune />}
-          classes={{
-            root: classes.filterButton,
-            label: classes.filterButtonLabel,
-          }}
-        >
-          Filter
-        </Button>
-      </div>
-    </div>
+      )}
+      renderInput={(params) => (
+        <InputElement
+          refContainer={refContainer}
+          handleMenuClick={handleMenuClick}
+          handleFilterClick={handleFilterClick}
+          {...params}
+        />
+      )}
+    />
   );
 };
 

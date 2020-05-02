@@ -18,7 +18,7 @@ type ContainerType = React.MutableRefObject<null | HTMLDivElement>;
 let onZoomOut = () => console.log("Map not loaded yet");
 let onZoomIn = () => console.log("Map not loaded yet");
 
-const initMap = ({ setMap, mapContainer }) => {
+const initMap = ({ setMap, mapContainer, onMapInit }) => {
   const map = new MapboxGL.Map({
     container: mapContainer.current,
     style: config.mapbox.style,
@@ -44,16 +44,17 @@ const initMap = ({ setMap, mapContainer }) => {
     map.easeTo({
       zoom: map.getZoom() + 1,
     });
+  onMapInit(map);
 };
 
-const Map = ({ isFilterOpen, handleFilterClose }) => {
+const Map = ({ isFilterOpen, handleFilterClose, onMapInit }) => {
   const [map, setMap] = useState(null);
   const mapContainer: ContainerType = useRef(null);
 
   useEffect(() => {
     MapboxGL.accessToken = config.mapbox.token;
-    if (map == null) initMap({ setMap, mapContainer });
-  }, [map]);
+    if (map == null) initMap({ setMap, mapContainer, onMapInit });
+  }, [map, onMapInit]);
 
   return (
     <div

@@ -35,6 +35,10 @@ interface Config {
     };
     bounds: [[number, number], [number, number]];
   };
+  search: {
+    source: string;
+    query: (string) => any[];
+  };
   filters: SectionType[];
 }
 
@@ -49,6 +53,14 @@ const config: Config = {
     bounds: [
       [1.52, 45.161239], //ws
       [19.2, 57.03824], //en
+    ],
+  },
+  search: {
+    source: "plants-b9vr5h",
+    query: (query) => [
+      "in",
+      ["downcase", query],
+      ["downcase", ["get", "title"]],
     ],
   },
   filters: [

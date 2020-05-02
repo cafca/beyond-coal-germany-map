@@ -16,6 +16,7 @@ const theme = createMuiTheme({
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isFilterOpen, setFilterOpen] = useState(false);
+  const [map, setMap] = useState(null);
 
   return (
     <div className="App">
@@ -23,11 +24,13 @@ function App() {
         <SearchBar
           handleMenuClick={() => setMenuOpen(!isMenuOpen)}
           handleFilterClick={() => setFilterOpen(!isFilterOpen)}
+          map={map}
         />
         <MainMenu isOpen={isMenuOpen} handleClose={() => setMenuOpen(false)} />
         <Map
           isFilterOpen={isFilterOpen}
           handleFilterClose={() => setFilterOpen(false)}
+          onMapInit={setMap}
         />
       </ThemeProvider>
     </div>

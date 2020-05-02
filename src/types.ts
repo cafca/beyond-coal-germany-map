@@ -1,3 +1,5 @@
+import { MapboxGeoJSONFeature } from "mapbox-gl";
+
 export interface OptionType {
   title: string;
   icon?: string;
@@ -11,4 +13,13 @@ export interface SectionType {
   icon: string;
   options?: OptionType[];
   variants?: OptionType[];
+}
+
+export type Status = "Open" | "Retiring" | "Retired" | "Construction";
+
+export interface MapFeature extends MapboxGeoJSONFeature {
+  properties: {
+    title: string;
+    status: Status;
+  };
 }

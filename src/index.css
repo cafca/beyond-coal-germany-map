@@ -39,6 +39,11 @@ body,
   opacity: 0.6;
 }
 
+/* Disable border on search input */
+.MuiAutocomplete-inputRoot > fieldset.MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
 @media only screen and (max-width: 600px) {
   .mapboxgl-popup {
     position: absolute;
