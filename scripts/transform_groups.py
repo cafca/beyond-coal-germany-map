@@ -27,7 +27,7 @@ def transform_geojson(data):
 
     def decode_coordinates(row):
         x, y = row["Koordinaten"].split(", ")
-        return list(map(float, [x, y]))
+        return list(map(float, [y, x]))
 
     for row in data:
         feature = {
