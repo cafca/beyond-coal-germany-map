@@ -6,10 +6,13 @@ const collectVariantFilters = (variants: OptionType[]) =>
     .map((v) => v.filter);
 
 const collectActiveFilters = (filterConfig: SectionType[]) => {
-  const activeFilters = [];
+  const activeFilters = {};
 
   Object.values(filterConfig).forEach((section) => {
     if (section.options == null) return;
+    if (section.layer == null) return;
+
+    if (activeFilters[section.layer] == null) activeFilters[section.layer] = [];
 
     const variantFilters = collectVariantFilters(section.variants);
 
@@ -17,9 +20,13 @@ const collectActiveFilters = (filterConfig: SectionType[]) => {
       if (option.hidden === true || option.filter == null) return;
 
       if (section.variants) {
-        activeFilters.push(["all", option.filter, ["any", ...variantFilters]]);
+        activeFilters[section.layer].push([
+          "all",
+          option.filter,
+          ["any", ...variantFilters],
+        ]);
       } else {
-        activeFilters.push(option.filter);
+        activeFilters[section.layer].push(option.filter);
       }
     });
   });

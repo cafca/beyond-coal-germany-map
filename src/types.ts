@@ -11,6 +11,7 @@ export interface OptionType {
 export interface SectionType {
   title: string;
   icon: string;
+  layer?: string;
   options?: OptionType[];
   variants?: OptionType[];
 }

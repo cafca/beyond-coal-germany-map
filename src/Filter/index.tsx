@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
 const FilterMenu = ({ isOpen, handleClose, map }) => {
   const classes = useStyles();
   const [filterMenu, setfilterMenu] = useState(config.filters);
-  const [filters, setFilters] = useState([]);
+  const [filters, setFilters] = useState({});
 
   useEffect(() => {
     setFilters(utils.collectActiveFilters(filterMenu));
@@ -47,9 +47,11 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
 
   useEffect(() => {
     if (map != null) {
-      map.setFilter(config.mapbox.layers.plants, ["any", ...filters], {
-        validate: config.debug,
-      });
+      Object.keys(filters).forEach((layer) =>
+        map.setFilter(layer, ["any", ...filters[layer]], {
+          validate: config.debug,
+        })
+      );
     }
   }, [filters, map]);
 

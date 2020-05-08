@@ -49,6 +49,7 @@ const config: Config = {
     style: styles.klimaallianz,
     layers: {
       plants: "plants",
+      groups: "groups",
     },
     bounds: [
       [1.52, 44.161239], //ws
@@ -67,6 +68,14 @@ const config: Config = {
     {
       title: "Gruppe",
       icon: GruppeIcon,
+      layer: "groups",
+      options: [
+        {
+          title: "Alle",
+          icon: GruppeIcon,
+          filter: ["has", "title"],
+        },
+      ],
     },
     {
       title: "Dorf",
@@ -79,6 +88,7 @@ const config: Config = {
     {
       title: "Kraftwerk",
       icon: KraftwerkIcon,
+      layer: "plants",
       options: [
         {
           title: "Steinkohle",
