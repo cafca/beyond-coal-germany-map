@@ -36,7 +36,7 @@ interface Props {
 }
 
 const sortResults = (a, b) =>
-  a.properties.status.localeCompare(b.properties.status);
+  a.properties.title.localeCompare(b.properties.title);
 
 const SearchBar: React.FC<Props> = ({
   handleMenuClick,
@@ -48,7 +48,7 @@ const SearchBar: React.FC<Props> = ({
   const [query, setQuery] = useState("");
   const [results, setResults] = useState(null);
   const [features, setFeatures] = useState(null);
-  // const [timer, setTimer] = useState(null);
+  const [popup, setPopup] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
   // Initialize search engine
@@ -67,11 +67,17 @@ const SearchBar: React.FC<Props> = ({
     const waitForFeatures = () => {
       const attemptLoading = (resolve, reject, ttl = 1000) => {
         if (map?.isStyleLoaded()) {
-          const results = map
-            ?.querySourceFeatures("composite", {
-              sourceLayer: config.search.source,
-            })
-            .sort(sortResults);
+          let results = [];
+          config.search.sources.forEach((source) => {
+            results = results.concat(
+              map
+                ?.querySourceFeatures("composite", {
+                  sourceLayer: source,
+                })
+                .sort(sortResults)
+            );
+          });
+
           resolve(results);
         } else {
           if (ttl === 0) reject("Timeout loading source features");
@@ -106,13 +112,16 @@ const SearchBar: React.FC<Props> = ({
   const onResultSelect = (_, feature) => {
     if (feature == null) return;
     setQuery("");
+    if (popup) popup.remove();
 
     const coordinates = feature.geometry.coordinates.slice();
     map.flyTo({ center: coordinates, zoom: 11 });
-    new MapboxGL.Popup()
-      .setLngLat(coordinates)
-      .setHTML(renderToString(<PopupContent feature={feature} />))
-      .addTo(map);
+    setPopup(
+      new MapboxGL.Popup()
+        .setLngLat(coordinates)
+        .setHTML(renderToString(<PopupContent feature={feature} />))
+        .addTo(map)
+    );
   };
 
   return (

@@ -36,7 +36,7 @@ interface Config {
     bounds: [[number, number], [number, number]];
   };
   search: {
-    source: string;
+    sources: string[];
     query: (string) => any[];
   };
   filters: SectionType[];
@@ -57,7 +57,7 @@ const config: Config = {
     ],
   },
   search: {
-    source: "plants-b9vr5h",
+    sources: ["plants-b9vr5h", "groups-9sxkqf"],
     query: (query) => [
       "in",
       ["downcase", query],
