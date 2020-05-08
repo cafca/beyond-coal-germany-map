@@ -52,6 +52,7 @@ def transform_geojson(plants):
         plant_feature = {
             "type": "Feature",
             "properties": {
+                "kind": "plant",
                 "title": plant["plantName"],
                 "date": plant["date"],
                 "capacity": plant["operational"],

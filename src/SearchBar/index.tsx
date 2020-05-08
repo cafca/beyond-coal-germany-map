@@ -7,8 +7,8 @@ import { Popper, Snackbar } from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import InputElement from "./InputElement";
-import Popup from "../Popup";
 import config from "../config";
+import PopupContent from "../Popups";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -111,7 +111,7 @@ const SearchBar: React.FC<Props> = ({
     map.flyTo({ center: coordinates, zoom: 11 });
     new MapboxGL.Popup()
       .setLngLat(coordinates)
-      .setHTML(renderToString(<Popup {...feature.properties}></Popup>))
+      .setHTML(renderToString(<PopupContent feature={feature} />))
       .addTo(map);
   };
 

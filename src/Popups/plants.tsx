@@ -1,6 +1,6 @@
 import React from "react";
 
-const PopupContent = ({
+const PlantPopup = ({
   title,
   date,
   capacity,
@@ -31,4 +31,4 @@ const PopupContent = ({
   </span>
 );
 
-export default PopupContent;
+export default PlantPopup;

@@ -3,6 +3,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Altbach/Deizisau 1+2",
         "date": "15/1/2020",
         "capacity": "855 MW",
@@ -25,6 +26,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Niederaussem",
         "date": "15/1/2020",
         "capacity": "3676 MW",
@@ -47,6 +49,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Bergkamen",
         "date": "15/1/2020",
         "capacity": "780 MW",
@@ -69,6 +72,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Berlin-Moabit",
         "date": "15/1/2020",
         "capacity": "100 MW",
@@ -91,6 +95,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Berlin-Klingenberg",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -113,6 +118,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Berlin-Reuter",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -135,6 +141,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Berlin-Reuter West",
         "date": "15/1/2020",
         "capacity": "600 MW",
@@ -157,6 +164,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Bexbach",
         "date": "15/1/2020",
         "capacity": "780 MW",
@@ -179,6 +187,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Lippendorf",
         "date": "15/1/2020",
         "capacity": "1867 MW",
@@ -201,6 +210,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Boxberg",
         "date": "15/1/2020",
         "capacity": "2582 MW",
@@ -223,6 +233,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Braunschweig",
         "date": "15/1/2020",
         "capacity": "78 MW",
@@ -245,6 +256,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Bremen-Hafen",
         "date": "15/1/2020",
         "capacity": "326 MW",
@@ -267,6 +279,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Bremen-Farge",
         "date": "15/1/2020",
         "capacity": "380 MW",
@@ -289,6 +302,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Bremen-Hastedt",
         "date": "15/1/2020",
         "capacity": "129 MW",
@@ -311,6 +325,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Chemnitz North II",
         "date": "15/1/2020",
         "capacity": "167 MW",
@@ -333,6 +348,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Cottbus",
         "date": "15/1/2020",
         "capacity": "82 MW",
@@ -355,6 +371,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Datteln",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -377,6 +394,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Dessau",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -399,6 +417,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Duisburg-Hochfeld II",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -421,6 +440,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Duisburg-Walsum",
         "date": "15/1/2020",
         "capacity": "1200 MW",
@@ -443,6 +463,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Ensdorf",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -465,6 +486,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Erlangen",
         "date": "15/1/2020",
         "capacity": "18 MW",
@@ -487,6 +509,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Eschweiler-Weisweiler",
         "date": "15/1/2020",
         "capacity": "1958 MW",
@@ -509,6 +532,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Flensburg",
         "date": "15/1/2020",
         "capacity": "100 MW",
@@ -531,6 +555,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Frankfurt/Main West",
         "date": "15/1/2020",
         "capacity": "144 MW",
@@ -553,6 +578,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Scholven/Buer",
         "date": "15/1/2020",
         "capacity": "816 MW",
@@ -575,6 +601,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Grevenbroich-Frimmersdorf",
         "date": "15/1/2020",
         "capacity": "635 MW",
@@ -597,6 +624,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Grevenbroich-Neurath",
         "date": "15/1/2020",
         "capacity": "4424 MW",
@@ -619,6 +647,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Grosskrotzenburg Staudinger",
         "date": "15/1/2020",
         "capacity": "553 MW",
@@ -641,6 +670,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Hamburg-Tiefstack",
         "date": "15/1/2020",
         "capacity": "205 MW",
@@ -663,6 +693,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Hamm Westfalen",
         "date": "15/1/2020",
         "capacity": "820 MW",
@@ -685,6 +716,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Hannover",
         "date": "15/1/2020",
         "capacity": "300 MW",
@@ -707,6 +739,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Heilbronn",
         "date": "15/1/2020",
         "capacity": "1066 MW",
@@ -729,6 +762,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Helmstedt Buschhaus",
         "date": "15/1/2020",
         "capacity": "405 MW",
@@ -751,6 +785,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Herne",
         "date": "15/1/2020",
         "capacity": "500 MW",
@@ -773,6 +808,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Mehrum",
         "date": "15/1/2020",
         "capacity": "750 MW",
@@ -795,6 +831,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Waehlitz",
         "date": "15/1/2020",
         "capacity": "37 MW",
@@ -817,6 +854,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Ibbenbueren",
         "date": "15/1/2020",
         "capacity": "838 MW",
@@ -839,6 +877,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Karcherstr.",
         "date": "15/1/2020",
         "capacity": "15 MW",
@@ -861,6 +900,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Karlsruhe",
         "date": "15/1/2020",
         "capacity": "1462 MW",
@@ -883,6 +923,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Kassel",
         "date": "15/1/2020",
         "capacity": "38 MW",
@@ -905,6 +946,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Kiel East",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -927,6 +969,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Cologne-Merkenich",
         "date": "15/1/2020",
         "capacity": "85 MW",
@@ -949,6 +992,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Leverkusen",
         "date": "15/1/2020",
         "capacity": "112 MW",
@@ -971,6 +1015,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Luenen",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -993,6 +1038,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Luenen-Stummhafen",
         "date": "15/1/2020",
         "capacity": "820 MW",
@@ -1015,6 +1061,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Mannheim",
         "date": "15/1/2020",
         "capacity": "2146 MW",
@@ -1037,6 +1084,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Marl",
         "date": "15/1/2020",
         "capacity": "136 MW",
@@ -1059,6 +1107,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Offenbach",
         "date": "15/1/2020",
         "capacity": "60 MW",
@@ -1081,6 +1130,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Jaenschwalde",
         "date": "15/1/2020",
         "capacity": "3210 MW",
@@ -1103,6 +1153,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Petershagen Heyden",
         "date": "15/1/2020",
         "capacity": "923 MW",
@@ -1125,6 +1176,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Pforzheim",
         "date": "15/1/2020",
         "capacity": "30 MW",
@@ -1147,6 +1199,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Quierschied-Weiher",
         "date": "15/1/2020",
         "capacity": "724 MW",
@@ -1169,6 +1222,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Rostock",
         "date": "15/1/2020",
         "capacity": "553 MW",
@@ -1191,6 +1245,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Saarbruecken Roemerbruecke",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1213,6 +1268,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Schkopau",
         "date": "15/1/2020",
         "capacity": "980 MW",
@@ -1235,6 +1291,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Schwarze Pumpe",
         "date": "15/1/2020",
         "capacity": "1600 MW",
@@ -1257,6 +1314,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Schweinfurt",
         "date": "15/1/2020",
         "capacity": "29 MW",
@@ -1279,6 +1337,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Stuttgart-Muenster",
         "date": "15/1/2020",
         "capacity": "96 MW",
@@ -1301,6 +1360,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Krefeld-Uerdingen",
         "date": "15/1/2020",
         "capacity": "148 MW",
@@ -1323,6 +1383,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Ulm Magirusstrasse",
         "date": "15/1/2020",
         "capacity": "135 MW",
@@ -1345,6 +1406,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Munich North",
         "date": "15/1/2020",
         "capacity": "365 MW",
@@ -1367,6 +1429,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Voelklingen-Fenne model+heat",
         "date": "15/1/2020",
         "capacity": "466 MW",
@@ -1389,6 +1452,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Voerde",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1411,6 +1475,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Voerde West",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1433,6 +1498,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Frechen/Wachtberg",
         "date": "15/1/2020",
         "capacity": "128 MW",
@@ -1455,6 +1521,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Walheim",
         "date": "15/1/2020",
         "capacity": "267 MW",
@@ -1477,6 +1544,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Wedel",
         "date": "15/1/2020",
         "capacity": "290 MW",
@@ -1499,6 +1567,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Werdohl-Elverlingsen",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1521,6 +1590,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Werne Gersteinwerk",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1543,6 +1613,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Wilhelmshaven",
         "date": "15/1/2020",
         "capacity": "788 MW",
@@ -1565,6 +1636,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Wolfsburg North",
         "date": "15/1/2020",
         "capacity": "140 MW",
@@ -1587,6 +1659,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Wolfsburg West",
         "date": "15/1/2020",
         "capacity": "306 MW",
@@ -1609,6 +1682,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Wuppertal-Elberfeld",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1631,6 +1705,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Zolling-Leininger",
         "date": "15/1/2020",
         "capacity": "474 MW",
@@ -1653,6 +1728,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Hamburg-Moorburg",
         "date": "15/1/2020",
         "capacity": "1640 MW",
@@ -1675,6 +1751,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Wilhelmshaven Engie",
         "date": "15/1/2020",
         "capacity": "795 MW",
@@ -1697,6 +1774,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Frankfurt/Oder",
         "date": "15/1/2020",
         "capacity": "49 MW",
@@ -1719,6 +1797,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Stuttgart-Gaisburg",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1741,6 +1820,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Fortuna Nord",
         "date": "15/1/2020",
         "capacity": "16 MW",
@@ -1763,6 +1843,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Huerth Ville/Berrenrath",
         "date": "15/1/2020",
         "capacity": "57 MW",
@@ -1785,6 +1866,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Stade Dow Chemical",
         "date": "15/1/2020",
         "capacity": "0 MW",
@@ -1807,6 +1889,7 @@
     {
       "type": "Feature",
       "properties": {
+        "kind": "plant",
         "title": "Huerth Goldenberg",
         "date": "15/1/2020",
         "capacity": "76 MW",

@@ -33,6 +33,7 @@ def transform_geojson(data):
         feature = {
             "type": "Feature",
             "properties": {
+                "kind": "group",
                 "title": row["Name Organisation/Gruppen"],
                 "city": row["Ort (Stadt)"],
                 "website": row["Webseite"],
