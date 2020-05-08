@@ -18,30 +18,27 @@ const configureMouseCursor = (map, layer) => {
 };
 
 const configurePopup = (map) => {
-  const handleClick = (e) => {
-    // Events are not DOM events, they don't support e.stopPropagation()
-    // so here an attribute is stored on the event that can be used to
-    // identify if the event has been seen the first time (upmost layer)
-    // or later
-
-    if (e.originalEvent.cancelled) {
-      return;
-    }
-    e.originalEvent.cancelled = true;
-
-    const feature = e.features[0];
-    const coordinates = feature.geometry.coordinates.slice();
-
-    new MapboxGL.Popup()
-      .setLngLat(coordinates)
-      .setHTML(renderToString(<PopupContent feature={feature} />))
-      .addTo(map);
-    return false;
-  };
-
   map.on("load", () => {
-    map.on("click", config.mapbox.layers.plants, handleClick);
-    map.on("click", config.mapbox.layers.groups, handleClick);
+    map.on("click", (e) => {
+      var bbox = [
+        [e.point.x - 2, e.point.y - 2],
+        [e.point.x + 2, e.point.y + 2],
+      ];
+      var features = map.queryRenderedFeatures(bbox, {
+        layers: ["groups", "plants"],
+      });
+
+      const feature = features[0];
+
+      if (feature == null) return;
+
+      const coordinates = feature.geometry.coordinates.slice();
+
+      new MapboxGL.Popup()
+        .setLngLat(coordinates)
+        .setHTML(renderToString(<PopupContent feature={feature} />))
+        .addTo(map);
+    });
   });
 };
 

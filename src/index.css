@@ -24,6 +24,7 @@ body,
   font-size: 16px;
   text-align: left;
   line-height: 1.4;
+  overflow-wrap: break-word;
 }
 
 .mapboxgl-popup-close-button {
