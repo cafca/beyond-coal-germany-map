@@ -2,7 +2,6 @@ import React from "react";
 import MapboxGL from "mapbox-gl";
 import { renderToString } from "react-dom/server";
 
-import config from "../config";
 import PopupContent from "../Popups";
 
 const configureMouseCursor = (map, layer) => {
