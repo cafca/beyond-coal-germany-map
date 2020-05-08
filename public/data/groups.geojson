@@ -1,0 +1,404 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Umweltinstitut München",
+        "city": "München ",
+        "website": "www.umweltinstitut.org",
+        "contact": "energie@umweltinstitut.org",
+        "plants": "Heizkraftwerk Nord (München); alle Kohlekraftwerke in kommunaler Hand (\"Klimawende von unten\")",
+        "note": "Das Umweltinstitut koordiniert die Kampagne \"Klimawende von unten\": www.klimawende.org ",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          48.13838,
+          11.592604
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "BürgerBegehren Klimaschutz e.V.",
+        "city": "Berlin",
+        "website": "https://buerger-begehren-klimaschutz.de",
+        "contact": "info@buerger-begehren-klimaschutz.de",
+        "plants": "Kohlekraftwerk Lünen\nKohlekraftwerk Krefeld\nBerliner Kohlekraftwerke\nBraunkohlekraftwerk Lippendorf\nHeizkraftwerk Kassel\nHeizkraftwerk Köln-Merkenich\nGroßkraftwerk Mannheim",
+        "note": "\n2014 gründete BBK das Bündnis „Kohleausstieg Berlin“das sich seit 2014 gemeinsam für den Kohleausstieg in und um Berlin engagiert.\n2017-2019 Kampagne und Petition „Rettet unser Wasser –  Neue Tagebaue ausschließen“\nUnterstützung der Gründungn der Bündnisse „Leipzig kohlefrei“, „Kassel kohlefrei“,  „Klimawende Köln“, „Heidelberg kohlefrei“ im Rahmen der Kampagne „Klimawende von unten“. \n",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          52.5134,
+          13.363005
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "BUND Baden-Württemberg",
+        "city": "Stuttgart",
+        "website": "https://www.bund-bawue.de",
+        "contact": "fritz.mielert@bund.net",
+        "plants": "Großkraftwerk Mannheim",
+        "note": "",
+        "news": "[link]\n[https://www.bund-bawue.de/themen/mensch-umwelt/klima-und-energie/klimaschutz/kohle-ausstieg/]"
+      },
+      "geometry": {
+        "coordinates": [
+          48.785301,
+          9.187098
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "BUND Brandenburg (Ortsgruppen Cottbus, Spree-Neiße & Welzow)",
+        "city": "Potsdam",
+        "website": "www.bund-brandenburg.de\nhttps://www.bund-brandenburg.de/braunkohle-klima/\n",
+        "contact": "bund.brandenburg@bund.net",
+        "plants": "Jänschwalde \nSchwarze Pumpe ",
+        "note": "Mit Demonstrationen, juristischen Mitteln und Petitionen gehen wir gegen die immense Klima- und Umweltzerstörung durch die Braunkohleverstromung in der Lausitz vor. Schwerpunkte liegen dabei auf der Verhinderung des neuen Tagebaus Welzow-Süd II, der insolvenzfesten Sicherung der Rekultivierungsmittel vom Bergbaukonzern und der Wasserverschmutzung durch den Kohleabbau.",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          52.405793,
+          13.090942
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "BUND Brandenburg (Ortsgruppen Cottbus, Spree-Neiße & Welzow)",
+        "city": "Welzow",
+        "website": "www.bund-brandenburg.de\nhttps://www.bund-brandenburg.de/braunkohle-klima/\n",
+        "contact": "bund.brandenburg@bund.net",
+        "plants": "Jänschwalde \nSchwarze Pumpe ",
+        "note": "Mit Demonstrationen, juristischen Mitteln und Petitionen gehen wir gegen die immense Klima- und Umweltzerstörung durch die Braunkohleverstromung in der Lausitz vor. Schwerpunkte liegen dabei auf der Verhinderung des neuen Tagebaus Welzow-Süd II, der insolvenzfesten Sicherung der Rekultivierungsmittel vom Bergbaukonzern und der Wasserverschmutzung durch den Kohleabbau.",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          51.580368,
+          14.172888
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "BUND Brandenburg (Ortsgruppen Cottbus, Spree-Neiße & Welzow)",
+        "city": "Cottbus",
+        "website": "www.bund-brandenburg.de\nhttps://www.bund-brandenburg.de/braunkohle-klima/\n",
+        "contact": "bund.brandenburg@bund.net",
+        "plants": "Jänschwalde \nSchwarze Pumpe ",
+        "note": "Mit Demonstrationen, juristischen Mitteln und Petitionen gehen wir gegen die immense Klima- und Umweltzerstörung durch die Braunkohleverstromung in der Lausitz vor. Schwerpunkte liegen dabei auf der Verhinderung des neuen Tagebaus Welzow-Süd II, der insolvenzfesten Sicherung der Rekultivierungsmittel vom Bergbaukonzern und der Wasserverschmutzung durch den Kohleabbau.",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          51.768156,
+          14.347871
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "BUND NRW e.V.",
+        "city": "Düsseldorf",
+        "website": "www.bund-nrw.de/trianel_luenen \nwww.bund-nrw.de/datteln\nwww.bund-nrw.de/braunkohle\n\n\n\n",
+        "contact": " dirk.jansen@bund.net\nthomas.kraemerkaemper@bund.net\n",
+        "plants": "Datteln 4\nLünen\nNeurath\nNiederaußem\nWeisweiler\n",
+        "note": "Der BUND NRW e.V. führt seit Jahrzehnten einen erfolgreichen Kampf gegen Kohlekraftwerke in NRW. Zahlreiche Neubauvorhaben wurden verhindert (Düsseldorf, Köln, Krefeld, Herne). Mit politischer Arbeit, Aktionen und Demonstrationen und auf juristischem Weg kämpft der BUND für einen schnellen Kohleausstieg. Mit Erfolg: Durch den gerichtlich erzwungenen Rodungsstopp im Hambacher Wald wurde verhindert, dass weitere 1,1 Milliarden Tonnen Braunkohle genutzt werden; die Steinkohlenkraftwerke Datteln 4 und Lünen wurden und werden erfolgreich beklagt; auch aktuell verfügen sie über keine rechtskräftigen Genehmigungen.",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          51.226111,
+          6.761972
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "BUND Landesverband Sachsen e.V.",
+        "city": "Chemnitz",
+        "website": "www.bund-sachsen.de",
+        "contact": "info@bund-sachsen.de",
+        "plants": "Boxberg\nChemnitz 2 Nord\nLippendorf",
+        "note": "Engagement gegen die Kohleverstromung und für die Energiewende in Sachsen ",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          50.851413,
+          12.907064
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Greenpeace Bad Kreuznach",
+        "city": "Bad Kreuznach",
+        "website": "https://www.badkreuznach.greenpeace.de/",
+        "contact": "info@badkreuznach.greenpeace.de ",
+        "plants": "Stadtwerke Bad Kreuznach",
+        "note": " Wir fordern die Stadtwerke auf, auf Kohlestrom zu verzichten",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          49.853659,
+          7.871134
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Greenpeace Cottbus",
+        "city": "Cottbus",
+        "website": "https://www.cottbus.greenpeace.de",
+        "contact": "info@cottbus.greenpeace.de",
+        "plants": "Jänschwalde\nSchwarze Pumpe\nBoxberg\nTurow PL\n",
+        "note": "Das Kraftwerk Turow in Polen im Dreiländereck liegt unmittelbar an der deutschen Grenze ohne positive UVP\n",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          51.744405,
+          14.348896
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": " Greenpeace Oberlausitz",
+        "city": "Zittau",
+        "website": "https://www.oberlausitz.greenpeace.de",
+        "contact": "info@oberlausitz.greenpeace.de",
+        "plants": "Turow PL",
+        "note": "Das Kraftwerk Turow in Polen im Dreiländereck liegt unmittelbar an der deutschen Grenze ohne positive UVP\n",
+        "news": ""
+      },
+      "geometry": {
+        "coordinates": [
+          50.896971,
+          14.807609
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Greenpeace Rostock",
+        "city": "Rostock",
+        "website": "www.rostock.greenpeace.de",
+        "contact": "info@rostock.greenpeace.de",
+        "plants": "Rostock",
+        "note": "Wir fordern, den Fernwärmeliefervertrag des SKK Rostock mit Stadtwerken Rostock auslaufen zu lassen",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          54.141715,
+          12.080716
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Klimawende Köln",
+        "city": "Köln",
+        "website": "https://www.klimawende.koeln/\nhttps://www.klimawende.org/klimawende-koeln",
+        "contact": "info@klimawende.koeln",
+        "plants": "Köln-Merkenich\nRostock",
+        "note": "Mit zwei Bürgerbegehren wollen wir unsere RheinEnergie dazu bringen, spätestens 2030 nur noch Strom und Wärme aus Erneuerbare Energien zu liefern. Doch noch betreibt die RheinEnergie ein Braunkohlekraftwerk im Norden von Köln und  ist die RheinEnergie mit 49,6 % an dem Steinkohlekraftwerk in Rostock beteiligt. Wir fordern die RheinEnergie auf jetzt eine Solar-Offensive zu starten und das Braunkohlekrafterk in Köln-Merkenich spätestens 2025 stillzulegen.\nWir fordern die RheinEnergie auf, das Kraftwerk Rostock 2024 stillzulegen - dann läuft nämlich der Fernwärmeliefervertrag mit der Stadt Rostock aus",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          50.948294,
+          6.968341
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Heidelberg kohlefrei",
+        "city": "Heidelberg",
+        "website": "https://hd-kohlefrei.de/\nhttps://www.klimawende.org/heidelberg-kohlefrei",
+        "contact": "bund.heidelberg@bund.net",
+        "plants": "Großkraftwerk Mannheim ",
+        "note": "Gespräche mit den Energieversorgern der Region, Parteien, Gemeinderäten und der Stadtverwaltung Heidelberg zu den Alternativen zur Steinkohleenergie und Energiegewinnung aus fossilen Energien, Info-Aktionen & Demos,  Positionspapiere, Vorträge, Aufklärungsarbeit zu Abbaubedingungen der Steinkohle, z.B. in der Republik Kolumbien, Vernetzung mit Aktivist*innen in und aus Abbaugebieten",
+        "news": "[link]\n[https://hd-kohlefrei.de/blog/] "
+      },
+      "geometry": {
+        "coordinates": [
+          49.401904,
+          8.705616
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Mannheim kohlefrei",
+        "city": "Mannheim",
+        "website": "www.mannheim-kohlefrei.de \nhttps://www.klimawende.org/mannheim-kohlefrei",
+        "contact": "mannheim_kohlefrei@riseup.net",
+        "plants": "Großkraftwerk Mannheim ",
+        "note": "",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          49.486743,
+          8.500951
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bündnis Fossilfreies Flensburg\n",
+        "city": "Flensburg",
+        "website": "https://www.klimawende.org/flensburg-fossilfrei",
+        "contact": "flensburg.fossilfrei@posteo.de",
+        "plants": "Flensburg",
+        "note": "Unsere Forderungen und Ziele:\n- eine von fossilen (und dazu aus fragwürdigen Quellen zugelieferten) Energien unabhängige Energieversorgung\n- eine regionale, nachhaltige Energieerzeugung und mehr Kooperation (z.B. mit den zahlreich vorhandenen Onshore-Windparks, die bald aus der EEG-Förderung herausfallen)\n- der generationenübergreifende Erhalt der Kommunalität unserer Stadtwerke\n\nUnsere Tätigkeiten (u.a.):\n- Durchführung von Informationsveranstaltungen\n- Anregung von politischen Diskursen\n- Wissensvernetzung",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          54.789038,
+          9.396693
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kohleausstieg Berlin",
+        "city": "Berlin",
+        "website": "https://www.kohleausstieg-berlin.de/",
+        "contact": "info@kohleausstieg-berlin.de",
+        "plants": "Klingenberg\nMoabit\nReuter West\nJänschwalde\nBoxberg\nSchwarze Pume",
+        "note": "2016+2017 Bootsdemo „Coal & Boat“ vor Klingenberg \n2017 Abschaltung von Klingenberg\n2017 Demo „Rote Linie“ vor  Moabit\n2018 Bootsdemo „Coal & Boat“ vor Moabit \n2018 Demo „Rote Linie“ vor KW Moabit\n2019 Demo „Rote Linie für Kohle, Gas und Müll“\nZur Vorstellung einer Machbarkeitsstudie Kohleausstieg in Berlin\n2019 Bootsdemo „Coal & Boat“  in Potsdam\n2019 Verbändedemo vor Jänschwalde\n2017-2019 Kampagne und Petition „Rettet unser\nWasser –  Neue Tagebaue ausschließen“",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          52.526688,
+          13.433222
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Raus aus der Steinkohle",
+        "city": "München",
+        "website": "https://www.klimawende.org/raus-aus-der-steinkohle/",
+        "contact": "info@raus-aus-der-steinkohle.de",
+        "plants": "Heizkraftwerk Nord (München)",
+        "note": "",
+        "news": "\n[link]\n[https://twitter.com/Kohleausstieg_M] "
+      },
+      "geometry": {
+        "coordinates": [
+          48.110691,
+          11.557705
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Alle Dörfer bleiben Halle/Leipziger Land",
+        "city": "",
+        "website": "www.poedelwitz-bleibt.de",
+        "contact": "poedelwitz.bleibt@bund-sachsen.de",
+        "plants": "Lippendorf",
+        "note": "",
+        "news": ""
+      },
+      "geometry": {
+        "coordinates": [
+          51.182988,
+          12.373092
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Menschenrecht vor Bergrecht",
+        "city": "Keyenberg (Erkelenz)",
+        "website": "https://menschenrecht-vor-bergrecht.de",
+        "contact": "info@menschenrecht-vor-bergrecht.de\npresse@menschenrecht-vor-bergrecht.de\n",
+        "plants": "Neurath\nNiederaußem",
+        "note": "Die Solidargemeinschaft von Menschenrecht vor Bergrecht (MvB) hat gemeinschaftlich eine Obstwiese am Ortsrand von Keyenberg (Stadt Erkelenz) erworben. Die Eigentümer*innen wollen damit den juristischen Weg bestreiten, um die Enteignung in Zeiten des Klimawandels zu verhindern. Alle Mitglieder von MvB wohnen in den gefährdeten Dörfern bei Garzweiler II oder am Tagebaurand.",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          51.083623,
+          6.41162
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bund für Umwelt und Naturschhutz Regionalgruppe Leipzig (BUND Leipzig)",
+        "city": "Leipzig",
+        "website": "https://www.bund-leipzig.de/",
+        "contact": "[ausstehend]",
+        "plants": "Lippendorf",
+        "note": "",
+        "news": "[link]"
+      },
+      "geometry": {
+        "coordinates": [
+          51.350803,
+          12.360812
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}
