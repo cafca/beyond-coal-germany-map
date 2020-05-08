@@ -33,7 +33,8 @@ const initMap = ({ setMap, mapContainer, onMapInit }) => {
     // map.addControl(new MapboxGL.NavigationControl(), "bottom-right");
     // map.addControl(new MapboxGL.GeolocateControl(), "bottom-left");
 
-    utils.configureMouseCursor(map);
+    utils.configureMouseCursor(map, "plants");
+    utils.configureMouseCursor(map, "groups");
   });
   utils.configurePopup(map);
   onZoomOut = () =>
