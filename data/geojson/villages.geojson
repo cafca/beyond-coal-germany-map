@@ -1,0 +1,165 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Keyenberg",
+        "relocations": "1.600 Menschen in den 5 Garzweiler-Dörfern (4)",
+        "relocations_status": "Laufend: 2016-2023"
+      },
+      "geometry": {
+        "coordinates": [
+          6.412421,
+          51.082479
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Kuckum",
+        "relocations": "1.600 Menschen in den 5 Garzweiler-Dörfern (4)",
+        "relocations_status": "Laufend: 2016-2027"
+      },
+      "geometry": {
+        "coordinates": [
+          6.394084,
+          51.083582
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Oberwestrich ",
+        "relocations": "1.600 Menschen in den 5 Garzweiler-Dörfern (4)",
+        "relocations_status": "Laufend: 2016-2027"
+      },
+      "geometry": {
+        "coordinates": [
+          6.400838,
+          51.078986
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Unterwestrich",
+        "relocations": "1.600 Menschen in den 5 Garzweiler-Dörfern (4)",
+        "relocations_status": "Laufend: 2016-2027"
+      },
+      "geometry": {
+        "coordinates": [
+          6.395682,
+          51.080463
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Berverath",
+        "relocations": "1.600 Menschen in den 5 Garzweiler-Dörfern (4)",
+        "relocations_status": "Laufend: 2016-2028"
+      },
+      "geometry": {
+        "coordinates": [
+          6.389517,
+          51.073735
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Eggerather Hof, Roitzer Hof und Weyer Hof",
+        "relocations": "1.600 Menschen in den 5 Garzweiler-Dörfern (4)",
+        "relocations_status": "bis ca. 2030"
+      },
+      "geometry": {
+        "coordinates": [
+          6.393345,
+          51.060221
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Lützerath",
+        "relocations": "55",
+        "relocations_status": ""
+      },
+      "geometry": {
+        "coordinates": [
+          6.426875,
+          51.058758
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Manheim ",
+        "relocations": "600 Menschen (4)",
+        "relocations_status": "Laufend: 2012-2022"
+      },
+      "geometry": {
+        "coordinates": [
+          6.597069,
+          50.883035
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Morschenich",
+        "relocations": "",
+        "relocations_status": "Laufend: 2013-2024; Ort kann erhalten werden"
+      },
+      "geometry": {
+        "coordinates": [
+          6.541377,
+          50.866766
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "village",
+        "title": "Mühlrose",
+        "relocations": "200 Menschen (4)",
+        "relocations_status": "2020 - 2024 "
+      },
+      "geometry": {
+        "coordinates": [
+          14.51286,
+          51.491671
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

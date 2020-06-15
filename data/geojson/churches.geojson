@@ -1,0 +1,117 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "church",
+        "title": "Dorfkirche Pödelwitz",
+        "constructed": "13. Jahrhundert",
+        "community": "Ev.-Luth. Kirche Pödelwitz"
+      },
+      "geometry": {
+        "coordinates": [
+          12.351353,
+          51.147004
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "church",
+        "title": "Dorfkirche Proschim",
+        "constructed": "1919",
+        "community": "Ev. Kirchengemeinde Proschim"
+      },
+      "geometry": {
+        "coordinates": [
+          14.189076,
+          51.552598
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "church",
+        "title": "Heilig Kreuz Keyenberg",
+        "constructed": "11. Jahrhundert",
+        "community": "Pfarrei Christkönig Erkelenz"
+      },
+      "geometry": {
+        "coordinates": [
+          6.412985,
+          51.084006
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "church",
+        "title": "Kapelle St. Josef",
+        "constructed": "1909",
+        "community": "Pfarrei Christkönig Erkelenz"
+      },
+      "geometry": {
+        "coordinates": [
+          6.389947,
+          51.073903
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "church",
+        "title": "Herz-Jesu-Kirche",
+        "constructed": "1890",
+        "community": "Pfarrei Christkönig Erkelenz"
+      },
+      "geometry": {
+        "coordinates": [
+          6.391774,
+          51.083327
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "church",
+        "title": "St. Albanus und Leonhardus",
+        "constructed": "1356 erstmals erwähnt",
+        "community": "Kath. Kirchengemeinde St. Albanus und Leonhardus"
+      },
+      "geometry": {
+        "coordinates": [
+          6.601376,
+          50.88092
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "church",
+        "title": "St. Lambertus Morschenich",
+        "constructed": "1308 erstmals erwähnt",
+        "community": ""
+      },
+      "geometry": {
+        "coordinates": [
+          6.541897,
+          50.866478
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

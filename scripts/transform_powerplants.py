@@ -1,8 +1,8 @@
 import json
 from collections import defaultdict
 
-IN_PATH = "data/powerplants.json"
-OUT_PATH = "public/data/plants.geojson"
+IN_PATH = "data/json/powerplants.json"
+OUT_PATH = "data/geojson/plants.geojson"
 
 
 def read_data():

@@ -1,0 +1,203 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Garzweiler II",
+        "territory": "Rheinisches Revier",
+        "owner": "RWE",
+        "volume": "670 Mio. t (1)",
+        "note": "Laut DIW 383 Mio. t. förderbar ohne dass Dörfer zerstört werden (6)",
+        "size": "32",
+        "status": "Rahmenbetriebsplan zugelassen, Anpassung im Zuge der Leitentscheidung von 2016 in Bearbeitung (laufendes Braunkohlenplananpassungsverfahren)",
+        "plants": "Neurath, Niederaußem",
+        "villages": "Lützerath, Keyenberg, Kuckum, Ober- und Unterwestrich, Berverath"
+      },
+      "geometry": {
+        "coordinates": [
+          6.434594,
+          51.083618
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Hambach",
+        "territory": "Rheinisches Revier",
+        "owner": "RWE",
+        "volume": "150 Mio. t ",
+        "note": "Laut DIW 418 Mio. t Braunkohle förderbar, ohne dass der Wald gefährdet wäre (6)",
+        "size": "43,8",
+        "status": "Braunkohlenplanänderungsverfahren ",
+        "plants": "Neurath, Niederaußem",
+        "villages": "Morschenich (gerettet), Manheim "
+      },
+      "geometry": {
+        "coordinates": [
+          6.541692,
+          50.902881
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Inden",
+        "territory": "Rheinisches Revier",
+        "owner": "RWE",
+        "volume": "125 Mio. t (2)",
+        "note": "",
+        "size": "17",
+        "status": "genehmigter Rahmenbetriebsplan, Änderungen der Tagebaugrenzen im Rahmen der bergechtlichen Genehmigungsverfahren der Hauptbetriebspläne",
+        "plants": "Weisweiler",
+        "villages": ""
+      },
+      "geometry": {
+        "coordinates": [
+          6.367534,
+          50.872066
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Vereinigtes Schleenhain",
+        "territory": "Mitteldeutsches Revier",
+        "owner": "MIBRAG",
+        "volume": "228 Mio. t  (4) Stand Ende 2017",
+        "note": "",
+        "size": "",
+        "status": "Koalitionsvertrag: Es soll eine  Verhandlungslösung zwischen der MIBRAG und der sächsischen Landesregierung gefunden werden ",
+        "plants": "Lippendorf",
+        "villages": "Pödelwitz (gerettet), Obertitz"
+      },
+      "geometry": {
+        "coordinates": [
+          12.371087,
+          51.144502
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Profen",
+        "territory": "Mitteldeutsches Revier",
+        "owner": "MIBRAG ",
+        "volume": "137  (4) Stand Ende 2017\n",
+        "note": "",
+        "size": "",
+        "status": "",
+        "plants": "Schkopau, Industriekraftwerke Deuben und Wählitz",
+        "villages": ""
+      },
+      "geometry": {
+        "coordinates": [
+          12.190747,
+          51.141953
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Tagebau Nochten / Sonderfeld Mühlrose",
+        "territory": "Lausitzer Revier",
+        "owner": "LEAG",
+        "volume": "223 (Teilfeld 1); 150 (Sonderfeld Mühlrose) (4) Stand Ende 2017",
+        "note": "",
+        "size": "",
+        "status": "Erarbeitung eines Entwurfs und Durchführung der Strategischen Umweltprüfung für den Braunkohlenplan (4) (5)",
+        "plants": "Boxberg, Schwarze Pumpe",
+        "villages": "Mühlrose "
+      },
+      "geometry": {
+        "coordinates": [
+          14.533987,
+          51.44034
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Welzow-Süd",
+        "territory": "Lausitzer Revier",
+        "owner": "LEAG",
+        "volume": " 254 (4) Stand Ende 2017",
+        "note": "",
+        "size": "",
+        "status": "Neuer Tagebau Welzow-Süd 2 im Koalitionsvertrag ausgeschlossen; Braunkohlenplan muss anulliert werden. ",
+        "plants": "Schwarze Pumpe, Jänschwalde",
+        "villages": "Proschim (gerettet)"
+      },
+      "geometry": {
+        "coordinates": [
+          14.235466,
+          51.581881
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Reichwalde",
+        "territory": "Lausitzer Revier",
+        "owner": "LEAG",
+        "volume": "331 (4) Stand Ende 2017",
+        "note": "",
+        "size": "",
+        "status": "",
+        "plants": "Jänschwalde, Schwarze Pumpe, Boxberg",
+        "villages": ""
+      },
+      "geometry": {
+        "coordinates": [
+          14.700441,
+          51.392418
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "mine",
+        "title": "Jänschwalde",
+        "territory": "Lausitzer Revier",
+        "owner": "LEAG",
+        "volume": "68 (4) Stand Ende 2017",
+        "note": "",
+        "size": "",
+        "status": "2021 ausgekohlt ",
+        "plants": "Jänschwalde",
+        "villages": ""
+      },
+      "geometry": {
+        "coordinates": [
+          14.52968,
+          51.779828
+        ],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}
