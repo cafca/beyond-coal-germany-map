@@ -15,7 +15,7 @@ const theme = createMuiTheme({
 
 function App() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [isFilterOpen, setFilterOpen] = useState(true);
+  const [isFilterOpen, setFilterOpen] = useState(false);
   const [map, setMap] = useState(null);
 
   return (

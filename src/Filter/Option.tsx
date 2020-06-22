@@ -11,12 +11,21 @@ import CheckOff from "@material-ui/icons/CheckCircleOutline";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     pinIcon: {
+      "min-width": "2.5em",
       "& > img": {
         height: "1.32em",
         width: "1.1em",
       },
     },
+    title: {
+      // @ts-ignore
+      "font-weight": (props) => (props.checked ? "bold" : "initial"),
+      "text-transform": "uppercase",
+      "padding-right": "0.5em",
+    },
     toggleWrapper: {
+      width: "24px",
+      textAlign: "center",
       "& > svg": {
         height: "0.7em",
         width: "0.7em",
@@ -26,17 +35,17 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const Option = ({ title, icon, checked, onToggle }) => {
-  const classes = useStyles();
+  const classes = useStyles({ checked });
   return (
     <ListItem button onClick={onToggle}>
-      <ListItemIcon className={classes.pinIcon}>
+      <ListItemIcon classes={{ root: classes.pinIcon }}>
         {icon == null ? (
           <PinIcon />
         ) : (
           <img src={icon} alt={`Icon ${title}`} aria-hidden />
         )}
       </ListItemIcon>
-      <ListItemText>{title}</ListItemText>
+      <ListItemText classes={{ primary: classes.title }} primary={title} />
       <ListItemSecondaryAction className={classes.toggleWrapper}>
         {checked ? <CheckOn /> : <CheckOff />}
       </ListItemSecondaryAction>

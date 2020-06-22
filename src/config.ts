@@ -7,7 +7,7 @@ import DorfIcon from "./Icons/Dörfer.svg";
 
 import TagebauIcon from "./Icons/Tagebau.svg";
 
-import KraftwerkIcon from "./Icons/Kraftwerk.svg";
+import KraftwerkIcon from "./Icons/Filter-Kohlekraftwerke.svg";
 import KraftwerkSteinkohleIcon from "./Icons/Steinkohle.svg";
 import KraftwerkBraunkohleIcon from "./Icons/Braunkohle.svg";
 // import KraftwerkGasIcon from "./Icons/Gas.svg";
@@ -75,28 +75,28 @@ const config: Config = {
   },
   filters: [
     {
-      title: "Gruppe",
+      title: "Aktive Gruppen",
       icon: GruppeIcon,
       layer: "groups",
       filter: ["has", "title"],
       color: "#03ACEC",
     },
     {
-      title: "Dorf",
+      title: "Bedrohte Dörfer",
       icon: DorfIcon,
       layer: "villages",
       filter: ["has", "title"],
       color: "#F8CA30",
     },
     {
-      title: "Tagebau",
+      title: "Braunkohle-Tagebaue",
       icon: TagebauIcon,
       layer: "mines",
       filter: ["has", "title"],
       color: "#A52317",
     },
     {
-      title: "Kraftwerk",
+      title: "Kohle-Kraftwerke",
       icon: KraftwerkIcon,
       layer: "plants",
       options: [

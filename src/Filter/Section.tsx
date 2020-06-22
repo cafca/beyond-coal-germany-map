@@ -17,31 +17,29 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     nested: {
       fontWeight: "bold",
-      paddingLeft: theme.spacing(4),
+      paddingLeft: theme.spacing(2),
     },
     optionDivider: {
       fontWeight: "bold",
       fontSize: "0.9em",
       color: "#666",
-      paddingLeft: theme.spacing(6),
+      paddingLeft: theme.spacing(4),
       marginTop: theme.spacing(1),
       marginBottom: theme.spacing(1),
     },
     spacer: {
-      marginBottom: "1em",
+      marginBottom: theme.spacing(2),
     },
     svgIcon: {
       "& > img": {
-        height: "1.5em",
-        width: "1.25em",
+        height: "2.2em",
+        width: "1.84em",
       },
     },
-    sectionChip: {
-      marginTop: "1em",
-      "& > span": {
-        textTransform: "uppercase",
-        fontWeight: "bold",
-      },
+    title: {
+      "text-transform": "uppercase",
+      // @ts-ignore
+      "font-weight": (props) => (props.isVisible ? "bold" : "initial"),
     },
   })
 );
@@ -57,7 +55,11 @@ const Section = ({
   onToggle,
   onToggleOption,
 }) => {
-  const classes = useStyles();
+  const isVisible =
+    options.length === 0
+      ? !hidden
+      : options.find((o) => o.hidden === true) == null;
+  const classes = useStyles({ isVisible });
   const optionEntries = options.map((option, i) => (
     <Option
       {...option}
@@ -78,10 +80,6 @@ const Section = ({
     />
   ));
 
-  const isVisible =
-    options.length === 0
-      ? !hidden
-      : options.find((o) => o.hidden === true) == null;
   const sectionStyle = color ? { color } : null;
   return (
     <>
@@ -93,7 +91,9 @@ const Section = ({
             <img src={icon} alt={`Icon ${title}`} aria-hidden />
           )}
         </ListItemIcon>
-        <ListItemText>{title}</ListItemText>
+
+        <ListItemText classes={{ primary: classes.title }} primary={title} />
+
         <ListItemSecondaryAction onClick={onToggle}>
           {isVisible ? (
             <CheckOn style={sectionStyle} aria-label="aktiv" />
@@ -102,20 +102,23 @@ const Section = ({
           )}
         </ListItemSecondaryAction>
       </ListItem>
+
+      <div className={classes.spacer}></div>
+
       {optionEntries.length > 0 && (
         <List className={classes.nested} dense={true} disablePadding>
           {optionEntries}
         </List>
       )}
+
       {variantEntries.length > 0 && (
         <>
           <div className={classes.optionDivider}>oder</div>
-          <List className={classes.nested} dense={true} disablePadding>
+          <List className={classes.nested} dense disablePadding>
             {variantEntries}
           </List>
         </>
       )}
-      {optionEntries.length === 0 && <div className={classes.spacer}></div>}
     </>
   );
 };
