@@ -50,6 +50,9 @@ const config: Config = {
     layers: {
       plants: "plants",
       groups: "groups",
+      villages: "villages",
+      churches: "churches",
+      mines: "mines",
     },
     bounds: [
       [1.52, 44.161239], //ws
@@ -57,7 +60,13 @@ const config: Config = {
     ],
   },
   search: {
-    sources: ["plants-b9vr5h", "groups-9sxkqf"],
+    sources: [
+      "plants-b9vr5h",
+      "groups-9sxkqf",
+      "villages-bbfm90",
+      "mines",
+      "churches-azmaa9",
+    ],
     query: (query) => [
       "in",
       ["downcase", query],
@@ -69,21 +78,22 @@ const config: Config = {
       title: "Gruppe",
       icon: GruppeIcon,
       layer: "groups",
-      options: [
-        {
-          title: "Alle",
-          icon: GruppeIcon,
-          filter: ["has", "title"],
-        },
-      ],
+      filter: ["has", "title"],
+      color: "#03ACEC",
     },
     {
       title: "Dorf",
       icon: DorfIcon,
+      layer: "villages",
+      filter: ["has", "title"],
+      color: "#F8CA30",
     },
     {
       title: "Tagebau",
       icon: TagebauIcon,
+      layer: "mines",
+      filter: ["has", "title"],
+      color: "#A52317",
     },
     {
       title: "Kraftwerk",
@@ -99,6 +109,7 @@ const config: Config = {
           title: "Braunkohle",
           icon: KraftwerkBraunkohleIcon,
           filter: ["==", ["get", "fuel"], "Lignite"],
+          color: "#5F2C00",
         },
       ],
       variants: [

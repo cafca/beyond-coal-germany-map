@@ -7,6 +7,8 @@ import IconButton from "@material-ui/core/IconButton";
 import config from "../config";
 import utils from "./utils";
 import Section from "./Section";
+import { List } from "@material-ui/core";
+import { BranchingSection, SingleSection } from "../types";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -30,9 +32,6 @@ const useStyles = makeStyles((theme: Theme) =>
     filterListing: {
       marginTop: "2em",
     },
-    info: {
-      fontSize: "0.9em",
-    },
   })
 );
 
@@ -47,6 +46,7 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
 
   useEffect(() => {
     if (map != null) {
+      console.log("set filter", filters);
       Object.keys(filters).forEach((layer) =>
         map.setFilter(layer, ["any", ...filters[layer]], {
           validate: config.debug,
@@ -82,20 +82,31 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
    */
   const handleToggleSection = (i: number) => {
     const newFilterMenu = [...filterMenu];
-    const allAreHidden =
-      filterMenu[i].options.find((o) => o.hidden !== true) == null;
-    newFilterMenu[i].options?.forEach(
-      (_, j) => (newFilterMenu[i].options[j].hidden = !allAreHidden)
-    );
+
+    if ("options" in filterMenu[i]) {
+      // Handle BranchingSection
+      const curOptions = (filterMenu[i] as BranchingSection).options;
+      const newOptions = (newFilterMenu[i] as BranchingSection).options;
+
+      const allAreHidden = curOptions.find((o) => o.hidden !== true) == null;
+      newOptions?.forEach((_, j) => (newOptions[j].hidden = !allAreHidden));
+    } else {
+      // Handle SingleSection
+      (newFilterMenu[i] as SingleSection).hidden = !(newFilterMenu[
+        i
+      ] as SingleSection).hidden;
+    }
     setfilterMenu(newFilterMenu);
   };
 
-  const filterEntries = config.filters.map((section, i) => (
+  const filterEntries = filterMenu.map((section, i) => (
     <Section
       {...section}
       key={`filtersection-${section.title}`}
-      onToggle={(option, isVariant) => handleFilterToggle(i, option, isVariant)}
-      onToggleAll={() => handleToggleSection(i)}
+      onToggleOption={(option, isVariant) =>
+        handleFilterToggle(i, option, isVariant)
+      }
+      onToggle={() => handleToggleSection(i)}
     />
   ));
 
@@ -103,15 +114,22 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
     <Drawer anchor="right" open={isOpen} onClose={handleClose}>
       <div className={classes.wrapper}>
         <div className={classes.heading}>
-          <IconButton onClick={handleClose}>
-            <CancelIcon />
+          <IconButton
+            onClick={handleClose}
+            role="button"
+            aria-label="Filtermenü schließen"
+          >
+            <CancelIcon aria-hidden />
           </IconButton>
-          <span>FILTER</span>
+          <span id="filter-header">FILTER</span>
         </div>
-        <div className={classes.filterListing}>{filterEntries}</div>
-        <p className={classes.info}>
-          <em>Du kannst die einzelnen Kategorien aus- und einblenden!</em>
-        </p>
+        <List
+          className={classes.filterListing}
+          dense
+          aria-labelledby="filter-header"
+        >
+          {filterEntries}
+        </List>
       </div>
     </Drawer>
   );

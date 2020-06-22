@@ -5,34 +5,40 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import ListItemText from "@material-ui/core/ListItemText";
 import PinIcon from "@material-ui/icons/Room";
-import Switch from "@material-ui/core/Switch";
+import CheckOn from "@material-ui/icons/CheckCircle";
+import CheckOff from "@material-ui/icons/CheckCircleOutline";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    svgIcon: {
+    pinIcon: {
       "& > img": {
-        height: "1.5em",
-        width: "1.25em",
+        height: "1.32em",
+        width: "1.1em",
+      },
+    },
+    toggleWrapper: {
+      "& > svg": {
+        height: "0.7em",
+        width: "0.7em",
       },
     },
   })
 );
 
-const Option = ({ title, icon, checked, onToggle, disabled }) => {
+const Option = ({ title, icon, checked, onToggle }) => {
   const classes = useStyles();
   return (
-    <ListItem>
-      <ListItemIcon className={classes.svgIcon}>
-        {icon == null ? <PinIcon /> : <img src={icon} alt="" />}
+    <ListItem button onClick={onToggle}>
+      <ListItemIcon className={classes.pinIcon}>
+        {icon == null ? (
+          <PinIcon />
+        ) : (
+          <img src={icon} alt={`Icon ${title}`} aria-hidden />
+        )}
       </ListItemIcon>
       <ListItemText>{title}</ListItemText>
-      <ListItemSecondaryAction>
-        <Switch
-          edge="end"
-          checked={checked}
-          onChange={onToggle}
-          disabled={disabled}
-        />
+      <ListItemSecondaryAction className={classes.toggleWrapper}>
+        {checked ? <CheckOn /> : <CheckOff />}
       </ListItemSecondaryAction>
     </ListItem>
   );

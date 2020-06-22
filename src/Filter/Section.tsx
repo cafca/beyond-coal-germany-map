@@ -1,15 +1,31 @@
 import React from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
-import Chip from "@material-ui/core/Chip";
 import List from "@material-ui/core/List";
+import PinIcon from "@material-ui/icons/Room";
+import CheckOn from "@material-ui/icons/CheckCircle";
+import CheckOff from "@material-ui/icons/CheckCircleOutline";
 
 import Option from "./Option";
+import {
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  ListItemSecondaryAction,
+} from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    list: {
+    nested: {
       fontWeight: "bold",
+      paddingLeft: theme.spacing(4),
+    },
+    optionDivider: {
+      fontWeight: "bold",
+      fontSize: "0.9em",
+      color: "#666",
+      paddingLeft: theme.spacing(6),
+      marginTop: theme.spacing(1),
+      marginBottom: theme.spacing(1),
     },
     spacer: {
       marginBottom: "1em",
@@ -33,10 +49,13 @@ const useStyles = makeStyles((theme: Theme) =>
 const Section = ({
   title,
   icon,
+  color = null,
+  filter = null,
+  hidden = null,
   options = [],
   variants = [],
   onToggle,
-  onToggleAll,
+  onToggleOption,
 }) => {
   const classes = useStyles();
   const optionEntries = options.map((option, i) => (
@@ -45,7 +64,7 @@ const Section = ({
       key={`option-${option.title}`}
       disabled={option.filter == null}
       checked={option.hidden !== true}
-      onToggle={() => onToggle(i, false)}
+      onToggle={() => onToggleOption(i, false)}
     />
   ));
   const variantEntries = variants.map((variant, i) => (
@@ -55,33 +74,49 @@ const Section = ({
       variant={true}
       disabled={variant.filter == null}
       checked={variant.hidden !== true}
-      onToggle={() => onToggle(i, true)}
+      onToggle={() => onToggleOption(i, true)}
     />
   ));
 
-  const hasNoFilters = options.find((option) => option.filter != null) == null;
+  const isVisible =
+    options.length === 0
+      ? !hidden
+      : options.find((o) => o.hidden === true) == null;
+  const sectionStyle = color ? { color } : null;
   return (
-    <div>
-      <Chip
-        label={title}
-        variant="outlined"
-        disabled={hasNoFilters}
-        className={classes.sectionChip}
-        onClick={onToggleAll}
-        avatar={<Avatar alt="" src={icon} className={classes.svgIcon} />}
-      />
+    <>
+      <ListItem button onClick={onToggle}>
+        <ListItemIcon className={classes.svgIcon}>
+          {icon == null ? (
+            <PinIcon />
+          ) : (
+            <img src={icon} alt={`Icon ${title}`} aria-hidden />
+          )}
+        </ListItemIcon>
+        <ListItemText>{title}</ListItemText>
+        <ListItemSecondaryAction onClick={onToggle}>
+          {isVisible ? (
+            <CheckOn style={sectionStyle} aria-label="aktiv" />
+          ) : (
+            <CheckOff style={sectionStyle} aria-label="inaktiv" />
+          )}
+        </ListItemSecondaryAction>
+      </ListItem>
       {optionEntries.length > 0 && (
-        <List className={classes.list} dense={true}>
+        <List className={classes.nested} dense={true} disablePadding>
           {optionEntries}
         </List>
       )}
       {variantEntries.length > 0 && (
-        <List className={classes.list} dense={true}>
-          {variantEntries}
-        </List>
+        <>
+          <div className={classes.optionDivider}>oder</div>
+          <List className={classes.nested} dense={true} disablePadding>
+            {variantEntries}
+          </List>
+        </>
       )}
       {optionEntries.length === 0 && <div className={classes.spacer}></div>}
-    </div>
+    </>
   );
 };
 
