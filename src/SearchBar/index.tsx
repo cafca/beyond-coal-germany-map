@@ -47,9 +47,6 @@ interface Props {
   map?: MapboxGL.Map;
 }
 
-const sortResults = (a, b) =>
-  a.properties.title.localeCompare(b.properties.title);
-
 const SearchBar: React.FC<Props> = ({
   handleMenuClick,
   handleFilterClick,
@@ -83,13 +80,18 @@ const SearchBar: React.FC<Props> = ({
         if (map?.isStyleLoaded()) {
           let results = [];
           config.search.sources.forEach((source) => {
-            results = results.concat(
-              map
-                ?.querySourceFeatures("composite", {
-                  sourceLayer: source,
-                })
-                .sort(sortResults)
-            );
+            // Mapbox `querySourceFeatures` may return duplicate results
+            // so these are deduped by assigning them to `newFeatures`
+            // by title
+            const newFeatures = {};
+            map
+              ?.querySourceFeatures("composite", {
+                sourceLayer: source,
+              })
+              .forEach(
+                (feature) => (newFeatures[feature.properties.title] = feature)
+              );
+            results = results.concat(Object.values(newFeatures));
           });
 
           resolve(results);

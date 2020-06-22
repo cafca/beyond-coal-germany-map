@@ -1,8 +1,11 @@
 import csv
 import json
 import os
+import logging
 
 from functools import reduce
+
+logger = logging.getLogger("converter")
 
 IN_FOLDER = ["data", "csv"]
 OUT_FOLDER = ["data", "geojson"]
@@ -56,6 +59,8 @@ MAPPINGS = {
 
 
 def read_data(path):
+    unique_titles = set()
+
     def valid(entry):
         if entry.get("Koordinaten") == "":
             return False
@@ -78,11 +83,8 @@ def transform_geojson(data, mapping):
         x, y = row["Koordinaten"].split(", ")
         return list(map(float, [y, x]))
 
+    unique_titles = set()
     for row in data:
-        if row is None:
-            import pdb
-
-            pdb.set_trace()
         feature = {
             "type": "Feature",
             "properties": {"kind": mapping["kind"]},
@@ -90,6 +92,12 @@ def transform_geojson(data, mapping):
         }
         for k, v in mapping["fields"].items():
             feature["properties"][k] = row.get(v)
+
+        if feature["properties"]["title"] in unique_titles:
+            logger.warning(
+                f"The {feature['properties']['kind']} {feature['properties']['title']} has a duplicate title"
+            )
+        unique_titles.add(feature["properties"]["title"])
         rv["features"].append(feature)
     return rv
 
@@ -101,19 +109,19 @@ def write_out(geojson, out_path):
 
 def make_in_path(kind):
     rv = reduce(os.path.join, IN_FOLDER + [f"{kind}.csv"])
-    print(f"In path: {rv}")
+    logger.debug(f"In path: {rv}")
     return rv
 
 
 def make_out_path(kind):
     rv = reduce(os.path.join, OUT_FOLDER + [f"{kind}.geojson"])
-    print(f"Out path: {rv}")
+    logger.debug(f"Out path: {rv}")
     return rv
 
 
 def main():
     for (kind, mapping) in MAPPINGS.items():
-        print(f"Mapping {kind}")
+        logger.debug(f"Mapping {kind}")
         data = read_data(make_in_path(kind))
         geojson = transform_geojson(data, mapping)
         write_out(geojson, make_out_path(kind))

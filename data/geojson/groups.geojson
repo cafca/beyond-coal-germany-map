@@ -64,7 +64,7 @@
       "type": "Feature",
       "properties": {
         "kind": "group",
-        "title": "BUND Brandenburg (Ortsgruppen Cottbus, Spree-Neiße & Welzow)",
+        "title": "BUND Brandenburg (Ortsgruppe Spree-Neiße)",
         "city": "Potsdam",
         "website": "www.bund-brandenburg.de\nhttps://www.bund-brandenburg.de/braunkohle-klima/\n",
         "contact": "bund.brandenburg@bund.net",
@@ -84,7 +84,7 @@
       "type": "Feature",
       "properties": {
         "kind": "group",
-        "title": "BUND Brandenburg (Ortsgruppen Cottbus, Spree-Neiße & Welzow)",
+        "title": "BUND Brandenburg (Ortsgruppe Welzow)",
         "city": "Welzow",
         "website": "www.bund-brandenburg.de\nhttps://www.bund-brandenburg.de/braunkohle-klima/\n",
         "contact": "bund.brandenburg@bund.net",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "properties": {
         "kind": "group",
-        "title": "BUND Brandenburg (Ortsgruppen Cottbus, Spree-Neiße & Welzow)",
+        "title": "BUND Brandenburg (Ortsgruppe Cottbus)",
         "city": "Cottbus",
         "website": "www.bund-brandenburg.de\nhttps://www.bund-brandenburg.de/braunkohle-klima/\n",
         "contact": "bund.brandenburg@bund.net",

@@ -1,8 +1,11 @@
 import json
+import logging
 from collections import defaultdict
 
 IN_PATH = "data/json/powerplants.json"
 OUT_PATH = "data/geojson/plants.geojson"
+
+logger = logging.getLogger("converter")
 
 
 def read_data():
@@ -44,10 +47,15 @@ def is_plant_retiring(plant):
 
 def transform_geojson(plants):
     rv = {"features": [], "type": "FeatureCollection"}
+    unique_titles = set()
 
     for plant in plants:
         if is_plant_retiring(plant):
             plant["status"] = "Retiring"
+
+        if plant["plantName"] in unique_titles:
+            logger.warning(f"'{plant['plantName']}' is a duplicate title")
+        unique_titles.add(plant["plantName"])
 
         plant_feature = {
             "type": "Feature",
