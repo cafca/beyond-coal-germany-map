@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     wrapper: {
       width: "18em",
-      padding: "1em"
+      padding: "1em",
     },
     heading: {
       fontVariant: "all-caps",
@@ -22,15 +22,15 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingRight: "8px",
       "& svg": {
         width: "1.4em",
-        height: "1.4em"
-      }
+        height: "1.4em",
+      },
     },
     list: {
       fontVariant: "all-small-caps",
       fontSize: "1.3em",
-      fontWeight: "bold"
+      fontWeight: "bold",
     },
-    "& li": {}
+    "& li": {},
   })
 );
 
@@ -46,13 +46,10 @@ const MainMenu = ({ isOpen, handleClose }) => {
           <span>MENU</span>
         </div>
         <List className={classes.list}>
-          <ListItem>About Us</ListItem>
-          <ListItem>Why End Coal</ListItem>
-          <ListItem>Publications</ListItem>
-          <ListItem>Take Action</ListItem>
-          <ListItem>Media Center</ListItem>
-          <ListItem>FAQ</ListItem>
-          <ListItem>Contact</ListItem>
+          <ListItem>Über uns</ListItem>
+          <ListItem>Warum wir aus der Kohle aussteigen müssen</ListItem>
+          <ListItem>Protestaktivitäten</ListItem>
+          <ListItem>Gegen Kohle</ListItem>
         </List>
       </div>
     </Drawer>
