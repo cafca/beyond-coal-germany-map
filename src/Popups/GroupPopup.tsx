@@ -1,6 +1,6 @@
 import React from "react";
 
-const GroupPopup = ({ title, note, city, website, contact, plants, news }) => (
+const GroupPopup = ({ title, city, website, contact, plants, note, news }) => (
   <span className="popup">
     <h1>{title}</h1>
     {note !== "" && <p>{note}</p>}

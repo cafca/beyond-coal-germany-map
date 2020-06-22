@@ -26,9 +26,7 @@ interface Config {
   mapbox: {
     token: string;
     style: string;
-    layers: {
-      [name: string]: string;
-    };
+    layers: string[];
     bounds: [[number, number], [number, number]];
   };
   search: {
@@ -43,13 +41,7 @@ const config: Config = {
   mapbox: {
     token: process.env.REACT_APP_MAPBOX_TOKEN || "",
     style: styles.klimaallianz,
-    layers: {
-      plants: "plants",
-      groups: "groups",
-      villages: "villages",
-      churches: "churches",
-      mines: "mines",
-    },
+    layers: ["plants", "groups", "villages", "churches", "mines"],
     bounds: [
       [1.52, 44.161239], //ws
       [19.2, 58.03824], //en

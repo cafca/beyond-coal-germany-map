@@ -3,6 +3,7 @@ import MapboxGL from "mapbox-gl";
 import { renderToString } from "react-dom/server";
 
 import PopupContent from "../Popups";
+import config from "../config";
 
 const configureMouseCursor = (map, layer) => {
   // Change the cursor to a pointer when the mouse is over the places layer.
@@ -24,7 +25,7 @@ const configurePopup = (map) => {
         [e.point.x + 2, e.point.y + 2],
       ];
       var features = map.queryRenderedFeatures(bbox, {
-        layers: ["groups", "plants"],
+        layers: config.mapbox.layers,
       });
 
       const feature = features[0];
