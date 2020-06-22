@@ -12,7 +12,7 @@ export interface OptionType {
 export type BaseSection = {
   title: string;
   icon: string;
-  layer?: string;
+  layers?: string[];
   color?: string;
 };
 
