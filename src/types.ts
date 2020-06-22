@@ -33,6 +33,6 @@ export type Status = "Open" | "Retiring" | "Retired" | "Construction";
 export interface MapFeature extends MapboxGeoJSONFeature {
   properties: {
     title: string;
-    status: Status;
+    kind: string;
   };
 }

@@ -9,6 +9,7 @@ import Autocomplete from "@material-ui/lab/Autocomplete";
 import InputElement from "./InputElement";
 import config from "../config";
 import PopupContent from "../Popups";
+import { MapFeature } from "../types";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -28,6 +29,17 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   })
 );
+
+const getCategoryLabel: (item: MapFeature) => string = ({
+  properties: { kind },
+}) =>
+  ({
+    church: "Kirche",
+    village: "Bedrohtes Dorf",
+    group: "Aktive Gruppe",
+    mine: "Tagebau",
+    plant: "Kohlekraftwerk",
+  }[kind]);
 
 interface Props {
   handleMenuClick: () => void;
@@ -57,7 +69,9 @@ const SearchBar: React.FC<Props> = ({
     const fuse = new Fuse(features, {
       keys: ["properties.title"],
     });
-    setResults(fuse.search(query));
+    const byGroup = (a, b) =>
+      getCategoryLabel(a.item).localeCompare(getCategoryLabel(b.item));
+    setResults(fuse.search(query).sort(byGroup));
   }, [features, query]);
 
   // Load map features from Mapbox once the style is loaded,
@@ -135,6 +149,7 @@ const SearchBar: React.FC<Props> = ({
         onChange={onResultSelect}
         options={results == null ? [] : results.map((res) => res.item)}
         getOptionLabel={(option) => option.properties.title}
+        groupBy={(option) => getCategoryLabel(option)}
         autoHighlight={true}
         PopperComponent={(props) => (
           <Popper
