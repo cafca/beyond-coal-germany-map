@@ -50,7 +50,7 @@ const config: Config = {
   search: {
     sources: [
       "plants-b9vr5h",
-      "groups-9sxkqf",
+      "groups",
       "villages-bbfm90",
       "mines",
       "churches-azmaa9",
