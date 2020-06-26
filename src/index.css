@@ -30,10 +30,11 @@ body,
 .mapboxgl-popup-close-button {
   width: 26px;
   height: 26px;
-  background-image: url("/images/close-icon.png");
+  background: url("/images/close-icon.png") no-repeat top left / 26px 26px;
   color: white;
   top: 10px;
   right: 10px;
+  transition: opacity 0.3s;
 }
 
 .mapboxgl-popup-close-button:hover {
