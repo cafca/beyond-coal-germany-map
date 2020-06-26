@@ -5,7 +5,8 @@ BUND;;;;;;;;ja;juliane.dickel@bund.net;thorben.becker@bund.net;
 Urgewald;;;;;;;;ja;katrin@urgewald.de;sebastian@urgewald.de;
 ClientEarth;;;;;;;;ja;iwestphal@clientearth.org;;
 Deutsche Umwelthilfe;;;;;;;;ja;zerger@duh.de;nicklas@duh.de;ahmels@duh.de
-Umweltinstitut München;48.138380, 11.592604;München ;www.umweltinstitut.org;energie@umweltinstitut.org;"Heizkraftwerk Nord (München); alle Kohlekraftwerke in kommunaler Hand (""Klimawende von unten"")";"Das Umweltinstitut koordiniert die Kampagne ""Klimawende von unten"": www.klimawende.org ";[link];ja;fb@umweltinstitut.org;pb@umweltinstitut.org;
+Umweltinstitut München;48.138380, 11.592604;München ;https://www.umweltinstitut.org;energie@umweltinstitut.org;"Heizkraftwerk Nord (München)
+alle Kohlekraftwerke in kommunaler Hand (""Klimawende von unten"")";"Das Umweltinstitut koordiniert die Kampagne ""Klimawende von unten"": www.klimawende.org ";[link];ja;fb@umweltinstitut.org;pb@umweltinstitut.org;
 Grüne Liga;;;;;;;;ja;umweltgruppe@kein-tagebau.de ;;
 BürgerBegehren Klimaschutz e.V.;52.513400, 13.363005;Berlin;https://buerger-begehren-klimaschutz.de;info@buerger-begehren-klimaschutz.de;"Kohlekraftwerk Lünen
 Kohlekraftwerk Krefeld
@@ -27,11 +28,11 @@ BUND Brandenburg (Ortsgruppe Spree-Neiße);52.405793, 13.090942;Potsdam;"www.bun
 https://www.bund-brandenburg.de/braunkohle-klima/
 ";bund.brandenburg@bund.net;"Jänschwalde 
 Schwarze Pumpe ";Mit Demonstrationen, juristischen Mitteln und Petitionen gehen wir gegen die immense Klima- und Umweltzerstörung durch die Braunkohleverstromung in der Lausitz vor. Schwerpunkte liegen dabei auf der Verhinderung des neuen Tagebaus Welzow-Süd II, der insolvenzfesten Sicherung der Rekultivierungsmittel vom Bergbaukonzern und der Wasserverschmutzung durch den Kohleabbau.;[link];ja;michaela.kruse@bund.net;;
-BUND Brandenburg (Ortsgruppe Welzow);51.580368, 14.172888;Welzow;"www.bund-brandenburg.de
+BUND Brandenburg (Ortsgruppe Welzow);51.580368, 14.172888;Welzow;"https://www.bund-brandenburg.de
 https://www.bund-brandenburg.de/braunkohle-klima/
 ";bund.brandenburg@bund.net;"Jänschwalde 
 Schwarze Pumpe ";Mit Demonstrationen, juristischen Mitteln und Petitionen gehen wir gegen die immense Klima- und Umweltzerstörung durch die Braunkohleverstromung in der Lausitz vor. Schwerpunkte liegen dabei auf der Verhinderung des neuen Tagebaus Welzow-Süd II, der insolvenzfesten Sicherung der Rekultivierungsmittel vom Bergbaukonzern und der Wasserverschmutzung durch den Kohleabbau.;[link];ja;michaela.kruse@bund.net;;
-BUND Brandenburg (Ortsgruppe Cottbus);51.768156, 14.347871;Cottbus;"www.bund-brandenburg.de
+BUND Brandenburg (Ortsgruppe Cottbus);51.768156, 14.347871;Cottbus;"https://www.bund-brandenburg.de
 https://www.bund-brandenburg.de/braunkohle-klima/
 ";bund.brandenburg@bund.net;"Jänschwalde 
 Schwarze Pumpe ";Mit Demonstrationen, juristischen Mitteln und Petitionen gehen wir gegen die immense Klima- und Umweltzerstörung durch die Braunkohleverstromung in der Lausitz vor. Schwerpunkte liegen dabei auf der Verhinderung des neuen Tagebaus Welzow-Süd II, der insolvenzfesten Sicherung der Rekultivierungsmittel vom Bergbaukonzern und der Wasserverschmutzung durch den Kohleabbau.;[link];ja;michaela.kruse@bund.net;;
@@ -51,7 +52,7 @@ Neurath
 Niederaußem
 Weisweiler
 ";"Der BUND NRW e.V. führt seit Jahrzehnten einen erfolgreichen Kampf gegen Kohlekraftwerke in NRW. Zahlreiche Neubauvorhaben wurden verhindert (Düsseldorf, Köln, Krefeld, Herne). Mit politischer Arbeit, Aktionen und Demonstrationen und auf juristischem Weg kämpft der BUND für einen schnellen Kohleausstieg. Mit Erfolg: Durch den gerichtlich erzwungenen Rodungsstopp im Hambacher Wald wurde verhindert, dass weitere 1,1 Milliarden Tonnen Braunkohle genutzt werden; die Steinkohlenkraftwerke Datteln 4 und Lünen wurden und werden erfolgreich beklagt; auch aktuell verfügen sie über keine rechtskräftigen Genehmigungen.";[link];ja;dirk.jansen@bund.net;thomas.kraemerkaemper@bund.net;
-BUND Landesverband Sachsen e.V.;50.851413, 12.907064;Chemnitz;www.bund-sachsen.de;info@bund-sachsen.de;"Boxberg
+BUND Landesverband Sachsen e.V.;50.851413, 12.907064;Chemnitz;https://www.bund-sachsen.de;info@bund-sachsen.de;"Boxberg
 Chemnitz 2 Nord
 Lippendorf";Engagement gegen die Kohleverstromung und für die Energiewende in Sachsen ;[link];ja;david.greve@bund-sachsen.de;;
 ;;;;;;;;;;;
@@ -72,7 +73,7 @@ Wir fordern die RheinEnergie auf, das Kraftwerk Rostock 2024 stillzulegen - dann
 Heidelberg kohlefrei;49.401904, 8.705616;Heidelberg;"https://hd-kohlefrei.de/
 https://www.klimawende.org/heidelberg-kohlefrei";bund.heidelberg@bund.net;Großkraftwerk Mannheim ;Gespräche mit den Energieversorgern der Region, Parteien, Gemeinderäten und der Stadtverwaltung Heidelberg zu den Alternativen zur Steinkohleenergie und Energiegewinnung aus fossilen Energien, Info-Aktionen & Demos,  Positionspapiere, Vorträge, Aufklärungsarbeit zu Abbaubedingungen der Steinkohle, z.B. in der Republik Kolumbien, Vernetzung mit Aktivist*innen in und aus Abbaugebieten;"[link]
 [https://hd-kohlefrei.de/blog/] ";ja;amany.vonoehsen@googlemail.com;;
-Mannheim kohlefrei;49.486743, 8.500951;Mannheim;"www.mannheim-kohlefrei.de 
+Mannheim kohlefrei;49.486743, 8.500951;Mannheim;"https://www.mannheim-kohlefrei.de 
 https://www.klimawende.org/mannheim-kohlefrei";mannheim_kohlefrei@riseup.net;Großkraftwerk Mannheim ;;[link];ja;Leon Brülke <lambrue@gmail.com>;;
 Kassel kohlefrei;;;;;;;;ja;info@kassel-kohlefrei.de;;
 "Bündnis Fossilfreies Flensburg
@@ -118,7 +119,7 @@ Halle / Leipziger Land";www.alle-doerfer-bleiben.de;info@alle-doerfer-bleiben.d
 Twitter: AlleDoerfer, Facebook: Alle Dörfer Bleiben
 [link]  
 ";ja;ddresen@posteo.de;;
-Alle Dörfer bleiben Halle/Leipziger Land;51.182988, 12.373092;;www.poedelwitz-bleibt.de;poedelwitz.bleibt@bund-sachsen.de;Lippendorf;;;;;;
+Alle Dörfer bleiben Halle/Leipziger Land;51.182988, 12.373092;;https://www.bund-sachsen.de/poedelwitz-bleibt/;poedelwitz.bleibt@bund-sachsen.de;Lippendorf;;;;;;
 Menschenrecht vor Bergrecht;51.083623, 6.411620;Keyenberg (Erkelenz);https://menschenrecht-vor-bergrecht.de;"info@menschenrecht-vor-bergrecht.de
 presse@menschenrecht-vor-bergrecht.de
 ";"Neurath
