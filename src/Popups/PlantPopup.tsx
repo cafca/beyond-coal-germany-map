@@ -53,7 +53,7 @@ const PlantPopup = ({
           <strong>Rohstoff:</strong> {translate(fuel)}
         </li>
         <li>
-          <strong>Geplante Abstellung:</strong>{" "}
+          <strong>geplante Abstellung:</strong>{" "}
           {retirement === 0 ? "-" : retirement}
         </li>
         <li>
