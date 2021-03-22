@@ -39,7 +39,7 @@ const GroupPopup = ({ title, city, website, contact, plants, note, news }) => {
         )}
         {websites}
         <li>
-          <a href="mailto:{contact}">Kontakt</a>
+          <a href={`mailto:${contact}`}>Kontakt</a>
         </li>
       </ul>
     </span>
