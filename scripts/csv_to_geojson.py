@@ -55,6 +55,21 @@ MAPPINGS = {
             "relocations_status": "Umsiedlungsstatus",
         },
     },
+    "plants": {
+        "kind": "plant",
+        "fields": {
+            "title": "title",
+            "date": "date",
+            "capacity": "capacity",
+            "emissions": "emissions",
+            "age": "age",
+            "owner": "owner",
+            "fuel": "fuel",
+            "maps": "maps",
+            "status": "status",
+            "retirement": "retirement",
+        },
+    }
 }
 
 
@@ -80,7 +95,11 @@ def transform_geojson(data, mapping):
     rv = {"features": [], "type": "FeatureCollection"}
 
     def decode_coordinates(row):
-        x, y = row["Koordinaten"].split(", ")
+        if "latitude" in row:
+            x  = row["latitude"]
+            y = row["longitude"]
+        else:
+            x, y = row["Koordinaten"].split(", ")
         return list(map(float, [y, x]))
 
     unique_titles = set()
