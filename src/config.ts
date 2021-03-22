@@ -16,10 +16,22 @@ import { SectionType } from "./types";
 
 const styles = {
   ramin: "mapbox://styles/daydreaming101/ck7bmt24v0hxj1itfln4af2l9",
-  vincent: "mapbox://styles/atlasblau/ck7uzuyo904ew1ipnafk3r4zg?fresh=true",
-  klimaallianz:
-    "mapbox://styles/fabian-huebner/ck98l6ypr18u71io6v1afp8vz?fresh=true",
+  vincent: "mapbox://styles/atlasblau/ck7uzuyo904ew1ipnafk3r4zg",
+  klimaallianz: "mapbox://styles/fabian-huebner/ck98l6ypr18u71io6v1afp8vz",
+  v2: "mapbox://styles/fabian-huebner/ckmkkv91p5osx17nrda8t6s9c",
 };
+
+/**
+ * Return one of the configured Mapbox styles, disabling map caching when
+ * NODE_ENV != production
+ * 
+ * @param name one of the styles defined in `styles` above
+ * @returns Mapbox API style URL
+ */
+const getStyle = (name: keyof typeof styles): string =>
+  `${styles[name]}${
+    process.env.NODE_ENV === "production" ? "" : "?fresh=true"
+  }`;
 
 interface Config {
   debug: boolean;
@@ -40,7 +52,7 @@ const config: Config = {
   debug: process.env.NODE_ENV !== "production",
   mapbox: {
     token: process.env.REACT_APP_MAPBOX_TOKEN || "",
-    style: styles.klimaallianz,
+    style: getStyle("v2"),
     layers: ["plants", "groups", "villages", "churches", "mines"],
     bounds: [
       [1.52, 44.161239], //ws
@@ -49,7 +61,7 @@ const config: Config = {
   },
   search: {
     sources: [
-      "plants-b9vr5h",
+      "plants",
       "groups",
       "villages-bbfm90",
       "mines",
