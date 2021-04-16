@@ -145,7 +145,7 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
         </List>
       <p className={classes.faqLink}>
         <a href="https://kohlecountdown.de/faq/">
-          Was bedeuten diese Begriffe?
+          Begriffe unklar? Schau in unsere FAQ
         </a>
       </p>
       </div>
