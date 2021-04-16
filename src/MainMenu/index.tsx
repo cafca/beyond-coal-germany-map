@@ -34,6 +34,10 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+const ListItemLink: React.FC<{ href: string }> = (props) => (
+  <ListItem button component="a" {...props} />
+);
+
 const MainMenu = ({ isOpen, handleClose }) => {
   const classes = useStyles();
   return (
@@ -46,10 +50,18 @@ const MainMenu = ({ isOpen, handleClose }) => {
           <span>MENU</span>
         </div>
         <List className={classes.list}>
-          <ListItem>Über uns</ListItem>
-          <ListItem>Warum wir aus der Kohle aussteigen müssen</ListItem>
-          <ListItem>Protestaktivitäten</ListItem>
-          <ListItem>Gegen Kohle</ListItem>
+          <ListItemLink href="https://kohlecountdown.de/about-us/who-we-are/">
+            Über uns
+          </ListItemLink>
+          <ListItemLink href="https://kohlecountdown.de/why-end-coal/">
+            5 Gründe für den Kohleausstieg
+          </ListItemLink>
+          <ListItemLink href="https://kohlecountdown.de/why-end-coal/protestaktivitaten-gegen-kohle/">
+            Protestaktivitäten
+          </ListItemLink>
+          <ListItemLink href="https://kohlecountdown.de/media-centre/">
+            Presse
+          </ListItemLink>
         </List>
       </div>
     </Drawer>
