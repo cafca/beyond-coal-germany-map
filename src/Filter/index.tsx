@@ -32,6 +32,19 @@ const useStyles = makeStyles((theme: Theme) =>
     filterListing: {
       marginTop: "2em",
     },
+    faqLink: {
+      color: '#666',
+      fontSize: ".9em",
+      textAlign: 'center',
+      "& a": {
+        textDecoration: 'none',
+        color: 'black',
+        borderBottom: '1px solid #666',
+        "&:hover": {
+          borderColor: '#aaa'
+        }
+      }
+    }
   })
 );
 
@@ -130,6 +143,11 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
         >
           {filterEntries}
         </List>
+      <p className={classes.faqLink}>
+        <a href="https://kohlecountdown.de/faq/">
+          Was bedeuten diese Begriffe?
+        </a>
+      </p>
       </div>
     </Drawer>
   );
