@@ -145,7 +145,8 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
         </List>
       <p className={classes.faqLink}>
         <a href="https://kohlecountdown.de/faq/">
-          Begriffe unklar? Schau in unsere FAQ
+          Begriffe unklar? <br />
+          Schau in unsere FAQ
         </a>
       </p>
       </div>
