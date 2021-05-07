@@ -60,13 +60,7 @@ const config: Config = {
     ],
   },
   search: {
-    sources: [
-      "plants",
-      "groups",
-      "villages-bbfm90",
-      "mines",
-      "churches-azmaa9",
-    ],
+    sources: ["plants-v2", "groups", "villages", "mines", "churches"],
     query: (query) => [
       "in",
       ["downcase", query],
