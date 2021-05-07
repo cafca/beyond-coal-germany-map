@@ -24,7 +24,7 @@ const styles = {
 /**
  * Return one of the configured Mapbox styles, disabling map caching when
  * NODE_ENV != production
- * 
+ *
  * @param name one of the styles defined in `styles` above
  * @returns Mapbox API style URL
  */
