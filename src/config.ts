@@ -114,11 +114,6 @@ const config: Config = {
       ],
       variants: [
         {
-          title: "In Bau",
-          icon: KraftwerkInBauIcon,
-          filter: ["==", ["get", "status"], "Construction"],
-        },
-        {
           title: "Aktiv",
           icon: KraftwerkAktivIcon,
           filter: ["==", ["get", "status"], "Open"],
