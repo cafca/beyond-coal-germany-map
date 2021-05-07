@@ -22,14 +22,14 @@ const GroupPopup = ({ title, city, website, contact, plants, note, news }) => {
   const plantComps = plants
     .split("\n")
     .filter((plant) => plant != null)
-    .map((plant) => <li>{plant}</li>);
+    .map((plant) => <li key={`group-plant-${plant}`}>{plant}</li>);
 
   return (
     <span className={classes.base}>
       <h1>{title}</h1>
       {note !== "" && <p>{note}</p>}
       <ul>
-        {plantComps.length > 0 && (
+        {plants !== "" && plantComps.length > 1 && (
           <ul className={classes.numbered}>
             <li>
               <strong>Kraftwerke:</strong>
