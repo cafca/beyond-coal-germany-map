@@ -124,6 +124,11 @@ const config: Config = {
           filter: ["==", ["get", "status"], "Open"],
         },
         {
+          title: "Konversion / Ersatz",
+          icon: KraftwerkInBauIcon,
+          filter: ["==", ["get", "status"], "Conversion"],
+        },
+        {
           title: "Vor Abschaltung",
           icon: KraftwerkAbschaltungIcon,
           filter: ["==", ["get", "status"], "Retiring"],
