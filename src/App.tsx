@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
-import "./App.css";
+import dotenv from 'dotenv';
 
 import MainMenu from "./MainMenu";
 import Map from "./Map";
 import SearchBar from "./SearchBar";
+
+import "./App.css";
+
+dotenv.config();
 
 const theme = createMuiTheme({
   typography: {
