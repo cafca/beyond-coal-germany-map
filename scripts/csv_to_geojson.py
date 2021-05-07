@@ -62,7 +62,7 @@ MAPPINGS = {
             "date": "date",
             "capacity": "capacity",
             "emissions": "emissions",
-            "age": "age",
+            "construction": "construction",
             "owner": "owner",
             "fuel": "fuel",
             "maps": "maps",
