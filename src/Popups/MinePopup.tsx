@@ -17,12 +17,14 @@ const MinePopup = ({
   const plantComps = plants
     .split(",")
     .filter((plant) => plant != null && plant.length > 0)
-    .map((plant) => <li>{plant.trim()}</li>);
+    .map((plant) => <li key={`mine-plant-${plant}`}>{plant.trim()}</li>);
 
   const villageComps = villages
     .split(",")
     .filter((village) => village != null && village.length > 0)
-    .map((village) => <li>{village.trim()}</li>);
+    .map((village) => (
+      <li key={`mine-village-${village}`}>{village.trim()}</li>
+    ));
   return (
     <span className={classes.base}>
       <h1>{title}</h1>
