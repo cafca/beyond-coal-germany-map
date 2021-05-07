@@ -1,7 +1,7 @@
 import React from "react";
 import { useStyles } from ".";
 
-const translate = (str) => {
+const translate = (str, conversion_note = "Umbauprojekt") => {
   switch (str) {
     case "Hard coal":
       return "Steinkohle";
@@ -13,6 +13,8 @@ const translate = (str) => {
       return "In Planung";
     case "Construction":
       return "Wird gebaut";
+    case "Conversion":
+      return conversion_note;
     case "Retired":
       return "Stillgelegt";
     case "Retiring":
@@ -22,19 +24,35 @@ const translate = (str) => {
   }
 };
 
+const getAge = (construction: string) => {
+  let age;
+  try {
+    age = new Date().getFullYear() - parseInt(construction);
+    if (isNaN(age)) {
+      age = "-";
+    }
+  } catch (err) {
+    age = "-";
+  }
+  return age;
+};
+
 const PlantPopup = ({
   title,
   date,
   capacity,
   emissions,
-  age,
+  construction,
   owner,
   fuel,
   maps,
   status,
   retirement,
+  conversion_note,
 }) => {
   const classes = useStyles();
+  const age = getAge(construction);
+
   return (
     <span className={classes.base}>
       <h1>{title}</h1>
@@ -57,7 +75,8 @@ const PlantPopup = ({
           {retirement === 0 ? "-" : retirement}
         </li>
         <li>
-          <strong>Kraftwerksstatus:</strong> {translate(status)}
+          <strong>Kraftwerksstatus:</strong>{" "}
+          {translate(status, conversion_note)}
         </li>
       </ul>
       <p>
