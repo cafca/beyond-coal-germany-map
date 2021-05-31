@@ -80,7 +80,9 @@ const PlantPopup = ({
         </li>
       </ul>
       <p>
-        <a href={maps}>Auf Google Maps anschauen</a>
+        <a href={maps} target="_blank" rel="noopener noreferrer">
+          Auf Google Maps anschauen
+        </a>
       </p>
     </span>
   );
