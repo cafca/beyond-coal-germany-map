@@ -119,7 +119,6 @@ const InputElement = (props) => {
             root: classes.inputRoot,
           }}
           variant="outlined"
-          autoFocus={true}
         />
         <Tooltip
           title="Im Filter-Menü kannst du Karteninhalte ein- und ausblenden."
