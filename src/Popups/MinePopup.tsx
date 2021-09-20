@@ -36,16 +36,6 @@ const MinePopup = ({
         <li>
           <strong>Unternehmen:</strong> {owner}
         </li>
-        <li>
-          <strong>Abbaumenge:</strong> {volume} (in Mio. t Braunkohle/
-          Unternehmensplanung)
-        </li>
-        <li>
-          <strong>Größe:</strong> {size} km²
-        </li>
-        <li>
-          <strong>Planungsstand:</strong> {status}
-        </li>
         {plantComps.length > 0 && (
           <ul className={classes.numbered}>
             <li>
