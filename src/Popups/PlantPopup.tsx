@@ -1,5 +1,8 @@
 import React from "react";
 import { useStyles } from ".";
+import debug from "debug";
+
+const log = debug("bcg:PlantPopup");
 
 const translate = (str, conversion_note = "Umbauprojekt") => {
   switch (str) {
@@ -24,17 +27,19 @@ const translate = (str, conversion_note = "Umbauprojekt") => {
   }
 };
 
-const getAge = (construction: string) => {
+const getAge = (construction: string): string => {
   let age;
   try {
     age = new Date().getFullYear() - parseInt(construction);
     if (isNaN(age)) {
-      age = "-";
+      log("Age is NaN", { construction });
+      return "-";
     }
+    return `${age} Jahr${age === 1 ? "" : "e"}`;
   } catch (err) {
-    age = "-";
+    log("Error parsing age", { err, construction });
+    return "-";
   }
-  return age;
 };
 
 const PlantPopup = ({
@@ -51,7 +56,7 @@ const PlantPopup = ({
   conversion_note,
 }) => {
   const classes = useStyles();
-  const age = getAge(construction);
+  const ageStr = getAge(construction);
 
   return (
     <span className={classes.base}>
@@ -62,7 +67,7 @@ const PlantPopup = ({
       <p>CO2-Emissionen: {emissions} Mt</p>
       <ul>
         <li>
-          <strong>Alter:</strong> {age}
+          <strong>Alter:</strong> {ageStr}
         </li>
         <li>
           <strong>Eigentümer / Betreiber:</strong> {owner}
