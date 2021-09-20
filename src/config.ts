@@ -8,6 +8,7 @@ import KraftwerkIcon from "./Icons/Filter-Kohlekraftwerke.svg";
 import KraftwerkSteinkohleIcon from "./Icons/Steinkohle.svg";
 import KraftwerkBraunkohleIcon from "./Icons/Braunkohle.svg";
 
+import KraftwerkNeubauVerhindertIcon from "./Icons/Neubau verhindert.svg";
 import KraftwerkInBauIcon from "./Icons/In Bau.svg";
 import KraftwerkAktivIcon from "./Icons/Aktiv.svg";
 import KraftwerkAbschaltungIcon from "./Icons/Vor Absch.svg";
@@ -113,6 +114,11 @@ const config: Config = {
           title: "Aktiv",
           icon: KraftwerkAktivIcon,
           filter: ["==", ["get", "status"], "Open"],
+        },
+        {
+          title: "Neubau verhindert",
+          icon: KraftwerkNeubauVerhindertIcon,
+          filter: ["==", ["get", "status"], "Cancelled"],
         },
         {
           title: "Konversion / Ersatz",
