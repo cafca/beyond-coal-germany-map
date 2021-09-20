@@ -33,18 +33,18 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: "2em",
     },
     faqLink: {
-      color: '#666',
+      color: "#666",
       fontSize: ".9em",
-      textAlign: 'center',
+      textAlign: "center",
       "& a": {
-        textDecoration: 'none',
-        color: 'black',
-        borderBottom: '1px solid #666',
+        textDecoration: "none",
+        color: "black",
+        borderBottom: "1px solid #666",
         "&:hover": {
-          borderColor: '#aaa'
-        }
-      }
-    }
+          borderColor: "#aaa",
+        },
+      },
+    },
   })
 );
 
@@ -105,9 +105,9 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
       newOptions?.forEach((_, j) => (newOptions[j].hidden = !allAreHidden));
     } else {
       // Handle SingleSection
-      (newFilterMenu[i] as SingleSection).hidden = !(newFilterMenu[
-        i
-      ] as SingleSection).hidden;
+      (newFilterMenu[i] as SingleSection).hidden = !(
+        newFilterMenu[i] as SingleSection
+      ).hidden;
     }
     setfilterMenu(newFilterMenu);
   };
@@ -143,12 +143,12 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
         >
           {filterEntries}
         </List>
-      <p className={classes.faqLink}>
-        <a href="https://kohlecountdown.de/faq/">
-          Begriffe unklar? <br />
-          Schau in unsere FAQ
-        </a>
-      </p>
+        <p className={classes.faqLink}>
+          <a href="https://kohlecountdown.de/faq/">
+            Begriffe unklar? <br />
+            Schau in unser Lexikon
+          </a>
+        </p>
       </div>
     </Drawer>
   );

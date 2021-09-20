@@ -163,6 +163,7 @@ const SearchBar: React.FC<Props> = ({
         )}
         renderInput={(params) => (
           <InputElement
+            isMapLoaded={features != null}
             refContainer={refContainer}
             handleMenuClick={handleMenuClick}
             handleFilterClick={handleFilterClick}
