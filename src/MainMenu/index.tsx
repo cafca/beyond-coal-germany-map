@@ -47,17 +47,17 @@ const MainMenu = ({ isOpen, handleClose }) => {
           <IconButton onClick={handleClose}>
             <CancelIcon />
           </IconButton>
-          <span>MENU</span>
+          <span>MENÜ</span>
         </div>
         <List className={classes.list}>
           <ListItemLink href="https://kohlecountdown.de/about-us/who-we-are/">
             Über uns
           </ListItemLink>
           <ListItemLink href="https://kohlecountdown.de/why-end-coal/">
-            5 Gründe für den Kohleausstieg
+            5 Gründe für den früheren Kohleausstieg
           </ListItemLink>
           <ListItemLink href="https://kohlecountdown.de/why-end-coal/protestaktivitaten-gegen-kohle/">
-            Protestaktivitäten
+            Protest
           </ListItemLink>
           <ListItemLink href="https://kohlecountdown.de/media-centre/">
             Presse
