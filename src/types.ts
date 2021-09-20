@@ -31,6 +31,7 @@ export type SectionType = BranchingSection | SingleSection;
 export type Status =
   | "Open"
   | "Cancelled"
+  | "Conversion"
   | "Retiring"
   | "Retired"
   | "Construction";
