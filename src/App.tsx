@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core";
-import dotenv from 'dotenv';
+import { createTheme, ThemeProvider } from "@material-ui/core";
+import dotenv from "dotenv";
 
 import MainMenu from "./MainMenu";
 import Map from "./Map";
@@ -10,7 +10,13 @@ import "./App.css";
 
 dotenv.config();
 
-const theme = createMuiTheme({
+const theme = createTheme({
+  palette: {
+    primary: {
+      // europe-beyond-coal blue taken from group pin color
+      main: "#149ae6",
+    },
+  },
   typography: {
     fontFamily:
       '"Open Sans", --apple-system, "Helvetica Neue", Arial, sans-serif',
