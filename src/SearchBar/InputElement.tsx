@@ -64,7 +64,9 @@ const InputElement = (props) => {
   const [hasBeenTouched, setHasBeenTouched] = useState(false);
 
   useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>;
+    let fadeInTimer: ReturnType<typeof setTimeout>;
+    let fadeOutTimer: ReturnType<typeof setTimeout>;
+
     // Tooltip should not appear as long as the map is loading or after
     // InputElement has been interacted with.
     if (hasBeenTouched || !isMapLoaded) {
@@ -72,17 +74,21 @@ const InputElement = (props) => {
     } else {
       // Wait for some time after map has been loaded, then fade in the tooltip
       // if InputElement still hasn't been interacted with.
-      timer = setTimeout(() => {
+      fadeInTimer = setTimeout(() => {
         if (hasBeenTouched) {
           setTooltipOpen(false);
         } else {
           setTooltipOpen(true);
+          fadeOutTimer = setTimeout(() => {
+            setTooltipOpen(false);
+          }, config.tooltip.fadeOutDelay);
         }
-      }, config.tooltipDelay);
+      }, config.tooltip.fadeInDelay);
     }
     return () => {
-      if (timer) {
-        clearTimeout(timer);
+      if (fadeInTimer) {
+        clearTimeout(fadeInTimer);
+        clearTimeout(fadeOutTimer);
       }
     };
   }, [hasBeenTouched, isMapLoaded]);

@@ -47,7 +47,10 @@ interface Config {
     query: (string) => any[];
   };
   filters: SectionType[];
-  tooltipDelay: number;
+  tooltip: {
+    fadeInDelay: number;
+    fadeOutDelay: number;
+  };
 }
 
 const config: Config = {
@@ -69,7 +72,10 @@ const config: Config = {
       ["downcase", ["get", "title"]],
     ],
   },
-  tooltipDelay: 1500,
+  tooltip: {
+    fadeInDelay: 1500,
+    fadeOutDelay: 12_000,
+  },
   filters: [
     {
       title: "Aktive Gruppen",
