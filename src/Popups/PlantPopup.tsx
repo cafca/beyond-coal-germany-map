@@ -22,6 +22,8 @@ const translate = (str, conversion_note = "Umbauprojekt") => {
       return "Stillgelegt";
     case "Retiring":
       return "Wird stillgelegt";
+    case "Cancelled":
+      return "Neubau verhindert";
     default:
       return "-";
   }
@@ -75,10 +77,14 @@ const PlantPopup = ({
         <li>
           <strong>Brennstoff:</strong> {translate(fuel)}
         </li>
-        <li>
-          <strong>geplante Stilllegung:</strong>{" "}
-          {retirement === 0 ? "-" : retirement}
-        </li>
+        {status !== "Cancelled" && (
+          <li>
+            <strong>
+              {status === "Retired" ? "Stillgelegt" : "Geplante Stilllegung"}:
+            </strong>{" "}
+            {[0, "0"].includes(retirement) ? "-" : retirement}
+          </li>
+        )}
         <li>
           <strong>Kraftwerksstatus:</strong>{" "}
           {translate(status, conversion_note)}
