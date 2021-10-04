@@ -8,6 +8,7 @@ import KraftwerkIcon from "./Icons/Filter-Kohlekraftwerke.svg";
 import KraftwerkSteinkohleIcon from "./Icons/Steinkohle.svg";
 import KraftwerkBraunkohleIcon from "./Icons/Braunkohle.svg";
 
+import KraftwerkNeubauVerhindertIcon from "./Icons/Neubau verhindert.svg";
 import KraftwerkInBauIcon from "./Icons/In Bau.svg";
 import KraftwerkAktivIcon from "./Icons/Aktiv.svg";
 import KraftwerkAbschaltungIcon from "./Icons/Vor Absch.svg";
@@ -46,6 +47,10 @@ interface Config {
     query: (string) => any[];
   };
   filters: SectionType[];
+  tooltip: {
+    fadeInDelay: number;
+    fadeOutDelay: number;
+  };
 }
 
 const config: Config = {
@@ -66,6 +71,10 @@ const config: Config = {
       ["downcase", query],
       ["downcase", ["get", "title"]],
     ],
+  },
+  tooltip: {
+    fadeInDelay: 1500,
+    fadeOutDelay: 12_000,
   },
   filters: [
     {
@@ -111,6 +120,11 @@ const config: Config = {
           title: "Aktiv",
           icon: KraftwerkAktivIcon,
           filter: ["==", ["get", "status"], "Open"],
+        },
+        {
+          title: "Neubau verhindert",
+          icon: KraftwerkNeubauVerhindertIcon,
+          filter: ["==", ["get", "status"], "Cancelled"],
         },
         {
           title: "Konversion / Ersatz",

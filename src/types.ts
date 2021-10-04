@@ -28,7 +28,13 @@ export interface BranchingSection extends BaseSection {
 
 export type SectionType = BranchingSection | SingleSection;
 
-export type Status = "Open" | "Retiring" | "Retired" | "Construction";
+export type Status =
+  | "Open"
+  | "Cancelled"
+  | "Conversion"
+  | "Retiring"
+  | "Retired"
+  | "Construction";
 
 export interface MapFeature extends MapboxGeoJSONFeature {
   properties: {

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import Tune from "@material-ui/icons/Tune";
-import { Button, IconButton, TextField } from "@material-ui/core";
+import { Button, IconButton, TextField, Tooltip } from "@material-ui/core";
+import config from "../config";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -31,23 +32,68 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     filterButton: {
       paddingLeft: theme.spacing(4),
+      "border-top-left-radius": 0,
+      "border-bottom-left-radius": 0,
     },
     filterButtonLabel: {
       paddingRight: theme.spacing(3),
     },
+    tooltip: {
+      fontSize: "0.9em",
+    },
   })
 );
 
-const InputElement = (params) => {
+const InputElement = (props) => {
   const classes = useStyles();
   const {
     refContainer,
     handleMenuClick,
     handleFilterClick,
+    isMapLoaded,
     ...htmlParams
-  } = params;
+  } = props;
+
+  const [isTooltipOpen, setTooltipOpen] = useState(false);
+  // hasBeenTouched is true when the input element has been interacted with
+  const [hasBeenTouched, setHasBeenTouched] = useState(false);
+
+  useEffect(() => {
+    let fadeInTimer: ReturnType<typeof setTimeout>;
+    let fadeOutTimer: ReturnType<typeof setTimeout>;
+
+    // Tooltip should not appear as long as the map is loading or after
+    // InputElement has been interacted with.
+    if (hasBeenTouched || !isMapLoaded) {
+      setTooltipOpen(false);
+    } else {
+      // Wait for some time after map has been loaded, then fade in the tooltip
+      // if InputElement still hasn't been interacted with.
+      fadeInTimer = setTimeout(() => {
+        if (hasBeenTouched) {
+          setTooltipOpen(false);
+        } else {
+          setTooltipOpen(true);
+          fadeOutTimer = setTimeout(() => {
+            setTooltipOpen(false);
+          }, config.tooltip.fadeOutDelay);
+        }
+      }, config.tooltip.fadeInDelay);
+    }
+    return () => {
+      if (fadeInTimer) {
+        clearTimeout(fadeInTimer);
+        clearTimeout(fadeOutTimer);
+      }
+    };
+  }, [hasBeenTouched, isMapLoaded]);
+
   return (
-    <div className={classes.wrapper} ref={refContainer}>
+    <div
+      className={classes.wrapper}
+      ref={refContainer}
+      onClick={() => setHasBeenTouched(true)}
+    >
       <div className={classes.search}>
         <IconButton
           className={classes.menuButton}
@@ -68,20 +114,30 @@ const InputElement = (params) => {
             root: classes.inputRoot,
           }}
           variant="outlined"
-          autoFocus={true}
         />
-        <Button
-          aria-label="Kartenfilter"
-          onClick={handleFilterClick}
-          color="inherit"
-          startIcon={<Tune />}
+        <Tooltip
+          title="Im Filter-Menü kannst du Karteninhalte ein- und ausblenden."
+          arrow
+          placement="bottom-end"
+          open={isTooltipOpen}
           classes={{
-            root: classes.filterButton,
-            label: classes.filterButtonLabel,
+            tooltip: classes.tooltip,
           }}
+          onClick={() => setHasBeenTouched(true)}
         >
-          Filter
-        </Button>
+          <Button
+            aria-label="Kartenfilter"
+            onClick={handleFilterClick}
+            color="inherit"
+            startIcon={<Tune />}
+            classes={{
+              root: classes.filterButton,
+              label: classes.filterButtonLabel,
+            }}
+          >
+            Filter
+          </Button>
+        </Tooltip>
       </div>
     </div>
   );

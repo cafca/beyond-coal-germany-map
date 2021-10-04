@@ -56,7 +56,7 @@ body,
     transform: none !important;
     max-width: none !important;
     will-change: initial !important;
-    z-index: 3;
+    z-index: 10000;
   }
 
   .mapboxgl-popup-content {
