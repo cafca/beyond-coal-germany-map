@@ -32,16 +32,11 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     filterButton: {
       paddingLeft: theme.spacing(4),
-      backgroundColor: theme.palette.primary.main,
       "border-top-left-radius": 0,
       "border-bottom-left-radius": 0,
-      "&:hover": {
-        backgroundColor: theme.palette.primary.light,
-      },
     },
     filterButtonLabel: {
       paddingRight: theme.spacing(3),
-      color: "white",
     },
     tooltip: {
       fontSize: "0.9em",
