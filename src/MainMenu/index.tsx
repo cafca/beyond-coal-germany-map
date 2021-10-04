@@ -53,10 +53,10 @@ const MainMenu = ({ isOpen, handleClose }) => {
           <ListItemLink href="https://kohlecountdown.de/about-us/who-we-are/">
             Über uns
           </ListItemLink>
-          <ListItemLink href="https://kohlecountdown.de/why-end-coal/">
+          <ListItemLink href="https://kohlecountdown.de/5-gruende/">
             5 Gründe für den früheren Kohleausstieg
           </ListItemLink>
-          <ListItemLink href="https://kohlecountdown.de/why-end-coal/protestaktivitaten-gegen-kohle/">
+          <ListItemLink href="https://kohlecountdown.de/protest-gegen-kohle/">
             Protest
           </ListItemLink>
           <ListItemLink href="https://kohlecountdown.de/media-centre/">
