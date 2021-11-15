@@ -20,6 +20,7 @@ const styles = {
   vincent: "mapbox://styles/atlasblau/ck7uzuyo904ew1ipnafk3r4zg",
   klimaallianz: "mapbox://styles/fabian-huebner/ck98l6ypr18u71io6v1afp8vz",
   v2: "mapbox://styles/fabian-huebner/ckmkkv91p5osx17nrda8t6s9c",
+  v3: "mapbox://styles/fabian-huebner/ckw0oyog709dx16qxpcchwxvq",
 };
 
 /**
@@ -57,8 +58,8 @@ const config: Config = {
   debug: process.env.NODE_ENV !== "production",
   mapbox: {
     token: process.env.REACT_APP_MAPBOX_TOKEN || "",
-    style: getStyle("v2"),
-    layers: ["plants", "groups", "villages", "churches", "mines"],
+    style: getStyle("v3"),
+    layers: ["plants", "groups", "villages", "churches", "mines-icon"],
     bounds: [
       [1.52, 44.161239], //ws
       [19.2, 58.03824], //en
@@ -94,7 +95,7 @@ const config: Config = {
     {
       title: "Braunkohle-Tagebaue",
       icon: TagebauIcon,
-      layers: ["mines"],
+      layers: ["mines-icon", "mines-outline", "mines-fill"],
       filter: ["has", "title"],
       color: "#A52317",
     },
