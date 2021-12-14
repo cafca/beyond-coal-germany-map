@@ -3,12 +3,15 @@ import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import CancelIcon from "@material-ui/icons/Cancel";
 import Drawer from "@material-ui/core/Drawer";
 import IconButton from "@material-ui/core/IconButton";
+import debug from "debug";
 
 import config from "../config";
 import utils from "./utils";
 import Section from "./Section";
 import { List } from "@material-ui/core";
 import { BranchingSection, SingleSection } from "../types";
+
+const log = debug("bcg:Filter");
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -59,7 +62,7 @@ const FilterMenu = ({ isOpen, handleClose, map }) => {
 
   useEffect(() => {
     if (map != null) {
-      console.log("set filter", filters);
+      log("set filter", filters);
       Object.keys(filters).forEach((layer) =>
         map.setFilter(layer, ["any", ...filters[layer]], {
           validate: config.debug,
