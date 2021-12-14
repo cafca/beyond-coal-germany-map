@@ -1,9 +1,10 @@
 # Kohlekarte
 
-[Live Site](https://karte.kohlecountdown.de/)
-[Development preview build](https://develop--beyond-coal-germany-map.netlify.app/)
+[https://karte.kohlekountdown.de](https://karte.kohlecountdown.de/) 
 
-## Development
+## Development 
+
+[Development preview build](https://develop--beyond-coal-germany-map.netlify.app/)
 
 Uses yarn 1.x
 
