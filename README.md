@@ -1,6 +1,7 @@
 # Kohlekarte
 
-Visit staging environment at https://kohlekarte-staging.netlify.com
+[Live Site](https://karte.kohlecountdown.de/)
+[Development preview build](https://develop--beyond-coal-germany-map.netlify.app/)
 
 ## Development
 
@@ -31,3 +32,9 @@ Build for production
 ```
 yarn build
 ```
+
+## License
+
+[GNU Affero General Public License v3.0](LICENSE).
+
+© 2021 Climate Action Network Europe
